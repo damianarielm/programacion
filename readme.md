@@ -2,6 +2,19 @@
 
 # Secuencial
 
+## Calculo de hipotenusa
+
+### Python
+
+```python
+a = int(input("Ingrese el valor de un cateto: "))
+b = int(input("Ingrese el valor del otro cateto: "))
+
+h = (a*a + b*b) ** 0.5
+
+print(f"El valor de la hipotenusa es {h}.")
+```
+
 ## Intercambio de variables
 
 ### Python
