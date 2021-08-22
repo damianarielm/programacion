@@ -86,12 +86,29 @@ a, b = b, a
 print(f"El valor de a es {a}, y el de b es {b}.")
 ```
 
+# Seleccion
+
+## Paridad
+
+### Python
+
 ```python
 a = int(input("Ingrese un numero: "))
-print(f"El valor absoluto es {a if a>= 0 else -a}.")
+
+if a % 2 == 0:
+    print("El numero es par.")
+else:
+    print("El numero es impar.")
 ```
 
-# Seleccion
+```python
+a = int(input("Ingrese un numero: "))
+
+if a / 2 == a // 2:
+    print("El numero es par.")
+else:
+    print("El numero es impar.")
+```
 
 ## Valor absoluto
 
@@ -104,6 +121,11 @@ if a >= 0:
     print(f"El valor absoluto es {a}.")
 else:
     print(f"El valor absoluto es {-a}.")
+```
+
+```python
+a = int(input("Ingrese un numero: "))
+print(f"El valor absoluto es {a if a>= 0 else -a}.")
 ```
 
 ## Signo
