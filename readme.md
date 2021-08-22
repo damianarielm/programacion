@@ -72,6 +72,19 @@ print(f"El valor de a es {a}, y el de b es {b}.")
 
 # Seleccion
 
+## Valor absoluto
+
+### Python
+
+```python
+a = int(input("Ingrese un numero: "))
+
+if a >= 0:
+    print(f"El valor absoluto es {a}.")
+else:
+    print(f"El valor absoluto es {-a}.")
+```
+
 ## Maximo de 5 numeros
 
 ### Python
