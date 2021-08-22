@@ -28,6 +28,24 @@ h = (a*a + b*b) ** 0.5
 print(f"El valor de la hipotenusa es {h}.")
 ```
 
+## Raices y vertice de una parabola
+
+### Python
+
+```python
+a = int(input("Ingrese coeficiente principal: "))
+b = int(input("Ingrese coeficiente lineal: "))
+c = int(input("Ingrese termino independiente: "))
+
+x1 = (-b + (b*b - 4*a*c) ** 0.5) / (2*a)
+x2 = (-b - (b*b - 4*a*c) ** 0.5) / (2*a)
+xv = -b / (2*a)
+yv = a*xv*xv + b*xv + c
+
+print(f"Las raices son {x1} y {x2}.")
+print(f"El vertice es ({xv}, {yv}).")
+```
+
 ## Intercambio de variables
 
 ### Python
@@ -52,25 +70,29 @@ a, b = b, a
 print(f"El valor de a es {a}, y el de b es {b}.")
 ```
 
-## Raices y vertice de una parabola
+# Seleccion
+
+## Maximo de 5 numeros
 
 ### Python
 
 ```python
-a = int(input("Ingrese coeficiente principal: "))
-b = int(input("Ingrese coeficiente lineal: "))
-c = int(input("Ingrese termino independiente: "))
+m = int(input("Ingrese el primer numero: "))
 
-x1 = (-b + (b*b - 4*a*c) ** 0.5) / (2*a)
-x2 = (-b - (b*b - 4*a*c) ** 0.5) / (2*a)
-xv = -b / (2*a)
-yv = a*xv*xv + b*xv + c
+s = int(input("Ingrese el segundo numero: "))
+if s > m: m = s
 
-print(f"Las raices son {x1} y {x2}.")
-print(f"El vertice es ({xv}, {yv}).")
+t = int(input("Ingrese el tercer numero: "))
+if t > m: m = t
+
+c = int(input("Ingrese el cuarto numero: "))
+if c > m: m = c
+
+q = int(input("Ingrese el quinto numero: "))
+if q > m: m = q
+
+print(f"El mas grande es {m}.")
 ```
-
-# Seleccion
 
 # Ciclo definido
 
