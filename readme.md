@@ -85,6 +85,21 @@ else:
     print(f"El valor absoluto es {-a}.")
 ```
 
+## Signo
+
+### Python
+
+```python
+a = int(input("Ingrese un numero: "))
+
+if a > 0:
+    print("El numero es positivo.")
+elif a == 0:
+    print("El numero es cero.")
+else:
+    print("El numero es negativo")
+```
+
 ## Maximo de 5 numeros
 
 ### Python
