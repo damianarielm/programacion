@@ -2,6 +2,19 @@
 
 # Secuencial
 
+## Calculo de minutos y segundos
+
+### Python
+
+```python
+h = int(input("Ingrese una cantidad de horas: "))
+
+m = h * 60
+s = m * 60
+
+print(f"La cantidad equivale a {m} minutos o {s} segundos.")
+```
+
 ## Calculo de hipotenusa
 
 ### Python
