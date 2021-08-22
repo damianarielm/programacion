@@ -70,6 +70,11 @@ a, b = b, a
 print(f"El valor de a es {a}, y el de b es {b}.")
 ```
 
+```python
+a = int(input("Ingrese un numero: "))
+print(f"El valor absoluto es {a if a>= 0 else -a}.")
+```
+
 # Seleccion
 
 ## Valor absoluto
