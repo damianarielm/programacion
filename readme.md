@@ -168,6 +168,35 @@ else:
     print("El numero es negativo")
 ```
 
+## Ordenar numeros
+
+### Python
+
+```python
+n1 = int(input("Ingrese el primer numero: "))
+n2 = int(input("Ingrese el segundo numero: "))
+n3 = int(input("Ingrese el tercer numero: "))
+
+if n1 < n2 < n3: print(n1, n2, n3)
+if n1 < n3 < n2: print(n1, n3, n2)
+if n2 < n1 < n3: print(n2, n1, n3)
+if n2 < n3 < n1: print(n2, n3, n1)
+if n3 < n1 < n2: print(n3, n1, n2)
+if n3 < n2 < n1: print(n3, n2, n1)
+```
+
+```python
+n1 = int(input("Ingrese el primer numero: "))
+n2 = int(input("Ingrese el segundo numero: "))
+n3 = int(input("Ingrese el tercer numero: "))
+
+if n1 > n2: n1, n2 = n2, n1
+if n2 > n3: n2, n3 = n3, n2
+if n1 > n2: n1, n2 = n2, n1
+
+print(n1, n2, n3)
+```
+
 ## Raices de un polinomio de grado 3
 
 ### Python
