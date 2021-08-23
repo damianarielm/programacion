@@ -2,6 +2,31 @@
 
 # Secuencial
 
+## Operadores aritmeticos
+
+### Python
+
+```python
+n1 = int(input("Ingrese un numero: "))
+n2 = int(input("Ingrese otro numero: "))
+
+suma = n1 + n2
+resta = n1 - n2
+producto = n1 * n2
+division = n1 / n2
+resto = n1 % n2
+entera = n1 // n2
+potencia = n1 ** n2
+
+print(f"La suma es {suma}.")
+print(f"La resta es {resta}.")
+print(f"El producto es {producto}.")
+print(f"La division es {division}.")
+print(f"El resto de la division es {resto}.")
+print(f"La division entera es {entera}.")
+print(f"La potencia es {potencia}.")
+```
+
 ## Calculo de minutos y segundos
 
 ### Python
@@ -88,6 +113,24 @@ print(f"El valor de a es {a}, y el de b es {b}.")
 
 # Seleccion
 
+## Valor absoluto
+
+### Python
+
+```python
+a = int(input("Ingrese un numero: "))
+
+if a >= 0:
+    print(f"El valor absoluto es {a}.")
+else:
+    print(f"El valor absoluto es {-a}.")
+```
+
+```python
+a = int(input("Ingrese un numero: "))
+print(f"El valor absoluto es {a if a>= 0 else -a}.")
+```
+
 ## Paridad
 
 ### Python
@@ -108,24 +151,6 @@ if a / 2 == a // 2:
     print("El numero es par.")
 else:
     print("El numero es impar.")
-```
-
-## Valor absoluto
-
-### Python
-
-```python
-a = int(input("Ingrese un numero: "))
-
-if a >= 0:
-    print(f"El valor absoluto es {a}.")
-else:
-    print(f"El valor absoluto es {-a}.")
-```
-
-```python
-a = int(input("Ingrese un numero: "))
-print(f"El valor absoluto es {a if a>= 0 else -a}.")
 ```
 
 ## Signo
