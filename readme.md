@@ -249,6 +249,34 @@ else:
         print("Es un triangulo escaleno.")
 ```
 
+## Chequeo de año bisiesto
+
+### Python
+
+```python
+año = int(input("Ingrese el año: "))
+
+if año % 4 == 0:
+    if año % 100 == 0:
+        if año % 400 == 0:
+            print("El año es bisiesto.")
+        else
+            print("El año no es bisiesto.")
+    else:
+        print("El año es bisiesto.")
+else:
+    print("El año no es bisiesto.")
+```
+
+```python
+año = int(input("Ingrese el año: "))
+
+if año % 4 == 0 and (año % 100 != 0 or año % 400 == 0):
+    print("El año es bisiesto.")
+else
+    print("El año es no bisiesto.")
+```
+
 ## Maximo de 5 numeros
 
 ### Python
