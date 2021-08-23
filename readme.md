@@ -32,12 +32,12 @@ print(f"La potencia es {potencia}.")
 ### Python
 
 ```python
-h = int(input("Ingrese una cantidad de horas: "))
+horas = int(input("Ingrese una cantidad de horas: "))
 
-m = h * 60
-s = m * 60
+minutos = horas * 60
+segundos = minutos * 60
 
-print(f"La cantidad equivale a {m} minutos o {s} segundos.")
+print(f"La cantidad equivale a {minutos} minutos o {segundos} segundos.")
 ```
 
 ## Calculo de hipotenusa
