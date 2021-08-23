@@ -168,6 +168,19 @@ else:
     print("El numero es negativo")
 ```
 
+## Chequeo de vocales
+
+### Python
+
+```python
+letra = input("Ingrese una letra: ")
+
+if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+    print("La letra es una vocal.")
+else:
+    print("La letra es una consonante.")
+```
+
 ## Ordenar numeros
 
 ### Python
