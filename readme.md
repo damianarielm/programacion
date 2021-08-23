@@ -48,9 +48,9 @@ print(f"La cantidad equivale a {minutos} minutos o {segundos} segundos.")
 a = int(input("Ingrese el valor de un cateto: "))
 b = int(input("Ingrese el valor del otro cateto: "))
 
-h = (a*a + b*b) ** 0.5
+hipotenusa = (a*a + b*b) ** 0.5
 
-print(f"El valor de la hipotenusa es {h}.")
+print(f"El valor de la hipotenusa es {hipotenusa}.")
 ```
 
 ## Teorema del coseno
@@ -118,17 +118,17 @@ print(f"El valor de a es {a}, y el de b es {b}.")
 ### Python
 
 ```python
-a = int(input("Ingrese un numero: "))
+n = int(input("Ingrese un numero: "))
 
-if a >= 0:
-    print(f"El valor absoluto es {a}.")
+if n >= 0:
+    print(f"El valor absoluto es {n}.")
 else:
-    print(f"El valor absoluto es {-a}.")
+    print(f"El valor absoluto es {-n}.")
 ```
 
 ```python
-a = int(input("Ingrese un numero: "))
-print(f"El valor absoluto es {a if a>= 0 else -a}.")
+n = int(input("Ingrese un numero: "))
+print(f"El valor absoluto es {a if n >= 0 else -n}.")
 ```
 
 ## Paridad
@@ -136,18 +136,18 @@ print(f"El valor absoluto es {a if a>= 0 else -a}.")
 ### Python
 
 ```python
-a = int(input("Ingrese un numero: "))
+n = int(input("Ingrese un numero: "))
 
-if a % 2 == 0:
+if n % 2 == 0:
     print("El numero es par.")
 else:
     print("El numero es impar.")
 ```
 
 ```python
-a = int(input("Ingrese un numero: "))
+n = int(input("Ingrese un numero: "))
 
-if a / 2 == a // 2:
+if n / 2 == n // 2:
     print("El numero es par.")
 else:
     print("El numero es impar.")
@@ -158,11 +158,11 @@ else:
 ### Python
 
 ```python
-a = int(input("Ingrese un numero: "))
+n = int(input("Ingrese un numero: "))
 
-if a > 0:
+if n > 0:
     print("El numero es positivo.")
-elif a == 0:
+elif n == 0:
     print("El numero es cero.")
 else:
     print("El numero es negativo")
@@ -205,21 +205,21 @@ print(f"Las raices son {x1}, {x2} y {x3}.")
 ### Python
 
 ```python
-m = int(input("Ingrese el primer numero: "))
+maximo = int(input("Ingrese el primer numero: "))
 
-s = int(input("Ingrese el segundo numero: "))
-if s > m: m = s
+segundo = int(input("Ingrese el segundo numero: "))
+if segundo > maximo: maximo = segundo
 
-t = int(input("Ingrese el tercer numero: "))
-if t > m: m = t
+tercero = int(input("Ingrese el tercer numero: "))
+if tercero > maximo: maximo = tercero
 
-c = int(input("Ingrese el cuarto numero: "))
-if c > m: m = c
+cuarto = int(input("Ingrese el cuarto numero: "))
+if cuarto > maximo: maximo = cuarto
 
-q = int(input("Ingrese el quinto numero: "))
-if q > m: m = q
+quinto = int(input("Ingrese el quinto numero: "))
+if quinto > maximo: maximo = quinto
 
-print(f"El mas grande es {m}.")
+print(f"El mas grande es {maximo}.")
 ```
 
 # Ciclo definido
