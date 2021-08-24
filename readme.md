@@ -398,6 +398,22 @@ for n in range(100):
     print(n)
 ```
 
+## Fizzbuzz
+
+### Python
+
+```python
+for n in range(20):
+    if n % 15 == 0:
+        print("fizzbuzz")
+    elif n % 3 == 0:
+        print("fizz")
+    elif n % 5 == 0:
+        print("buzz")
+    else:
+        print(n)
+```
+
 ## Cantidad de vocales
 
 ### Python
