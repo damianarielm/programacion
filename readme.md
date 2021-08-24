@@ -437,6 +437,8 @@ print(f"El factorial es: {factorial}.")
 
 ## Maximo de 10 numeros
 
+### Python
+
 ```python
 maximo = int(input("Ingrese un numero: "))
 
@@ -479,6 +481,20 @@ for l1 in alfabeto:
 ```
 
 # Ciclo indefinido
+
+## Contraseña
+
+### Python
+
+```python
+contraseña = "abc123"
+intento = ""
+
+while intento != contraseña:
+    intento = input("Ingrese una contraseña: ")
+
+print("Contraseña correcta.")
+```
 
 # Arreglos
 
