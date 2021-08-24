@@ -435,6 +435,19 @@ for i in range(1, n + 1):
 print(f"El factorial es: {factorial}.")
 ```
 
+## Maximo de 10 numeros
+
+```python
+maximo = int(input("Ingrese un numero: "))
+
+for i in range(10):
+    n = int(input("Ingrese otro numero: "))
+
+    if n > maximo: maximo = n
+
+print(f"El numero mayor es: {maximo}.")
+```
+
 ## Calculo de e
 
 ### Python
