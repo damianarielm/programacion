@@ -373,6 +373,15 @@ print(f"El mas grande es {maximo}.")
 
 # Ciclo definido
 
+## Numeros naturales
+
+### Python
+
+```python
+for n in range(100):
+    print(n)
+```
+
 ## Suma de naturales
 
 ### Python
@@ -422,9 +431,9 @@ e = 1
 factorial = 1
 for i in range(1, iteraciones):
     e += 1 / factorial
-        factorial *= i + 1
+    factorial *= i + 1
 
-        print(f"El valor de e es: {e}.")
+print(f"El valor de e es: {e}.")
 ```
 
 ## Fuerza bruta
