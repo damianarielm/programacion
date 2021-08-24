@@ -451,6 +451,27 @@ for i in range(1, n + 1):
 print(f"El factorial es: {factorial}.")
 ```
 
+## Sucesion de Fibonacci
+
+### Python
+
+```python
+fa = 1
+fb = 1
+
+for i in range(3, 12):
+    print(fa)
+    fi = fa + fb
+    fa, fb = fb, fi
+```
+
+```python
+phi = (1 + 5**0.5) / 2
+
+for n in range(1, 10):
+    print( (phi**n - (1 - phi)**n) // (5**0.5) )
+```
+
 ## Maximo de 10 numeros
 
 ### Python
