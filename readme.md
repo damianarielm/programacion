@@ -397,6 +397,20 @@ suma = (primero + ultimo) * (ultimo - primero + 1) / 2
 print(f"La suma es: {suma}.")
 ```
 
+## Factorial
+
+### Python
+
+```python
+n = int(input("Ingrese un numero: "))
+
+factorial = 1
+for i in range(1, n + 1):
+    factorial *= i
+
+print(f"El factorial es: {factorial}.")
+```
+
 ## Fuerza bruta
 
 ### Python
