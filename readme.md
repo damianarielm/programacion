@@ -411,6 +411,22 @@ for i in range(1, n + 1):
 print(f"El factorial es: {factorial}.")
 ```
 
+## Calculo de e
+
+### Python
+
+```python
+iteraciones = int(input("Ingrese cantidad de iteraciones: "))
+
+e = 1
+factorial = 1
+for i in range(1, iteraciones):
+    e += 1 / factorial
+        factorial *= i + 1
+
+        print(f"El valor de e es: {e}.")
+```
+
 ## Fuerza bruta
 
 ### Python
