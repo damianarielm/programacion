@@ -770,6 +770,40 @@ for i, n in enumerate(lista):
 print(f"Lista ordenada: {lista}.")
 ```
 
+## Nim
+
+> The Nimatron is a computer that allows one to play the game Nim. It was
+> first presented in April 1940 at the 1939 New York World's Fair purely as a
+> form of entertainment. Designed in the winter of 1939 by Edward Condon for
+> the sole purpose of entertaining, it is a digital computer composed of
+> electromechanical relays which allows the lighting of four lines of seven
+> bulbs. Each player can turn off one or more of them in any line, then the
+> machine takes a turn, and so on. The last to extinguish a light is the winner.
+
+### Python
+
+```python
+montones =  ["*" * int(input("Ingrese cantidad del primer monton: "))]
+montones += ["*" * int(input("Ingrese cantidad del segundo monton: "))]
+montones += ["*" * int(input("Ingrese cantidad del tercer monton: "))]
+
+turno = 0
+
+while "".join(montones):
+    print(f"1: {montones[0]}")
+    print(f"2: {montones[1]}")
+    print(f"3: {montones[2]}")
+
+    monton = int(input(f"Jugador {turno + 1}, elija un monton: ")) - 1
+
+    if 0 <= monton <= 2 and montones[monton]:
+        cantidad = int(input("Ingrese cantidad: "))
+
+        if 0 < cantidad <= len(montones[monton]):
+            montones[monton] = "*" * (len(montones[monton]) - cantidad)
+            turno = (turno + 1) % 2
+```
+
 ## Torres de Hanoi
 
 > N. Claus de Siam vio en el gran templo de Benarés, debajo de una cúpula que
