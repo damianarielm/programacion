@@ -770,6 +770,39 @@ for i, n in enumerate(lista):
 print(f"Lista ordenada: {lista}.")
 ```
 
+## Torres de Hanoi
+
+> N. Claus de Siam vio en el gran templo de Benarés, debajo de una cúpula que
+> marca el centro del mundo, tres varillas de diamante embutidas en una base
+> de bronce, de la altura de 1 codo (unos 45 cm) y el grosor del cuerpo de una
+> abeja. Sobre una de las varillas Dios ensartó, en el comienzo de los
+> tiempos, 64 discos de oro puro; el mayor de todos apoyado sobre el bronce y
+> los demás, cada vez más pequeños, apilados hasta el final de la varilla. Es
+> la torre sagrada de Brahma. Día y noche los sacerdotes se turnan sobre las
+> gradas del altar para trasladar la torre de la primera varilla a la tercera,
+> respetando las antedichas reglas impuestas por Brahma. Cuando se complete la
+> tarea la torre y los brahmanes colapsarán y acaecerá el fin del mundo.
+
+### Python
+
+```python
+discos = int(input("Ingrese numero de discos: "))
+
+torres = [ list(range(discos))[::-1], [], [] ]
+
+while len(torres[2]) != discos:
+    print(f"Torre 1: {torres[0]}.")
+    print(f"Torre 2: {torres[1]}.")
+    print(f"Torre 3: {torres[2]}.\n")
+
+    origen = int(input("Ingrese torre de origen: ")) - 1
+    destino = int(input("Ingrese torre de destino: ")) - 1
+
+    if origen < 4 and destino < 4 and torres[origen]:
+        if not torres[destino] or torres[origen][-1] < torres[destino][-1]:
+            torres[destino] += [torres[origen].pop()]
+```
+
 # Recursion
 
 ## Factorial
