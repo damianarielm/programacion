@@ -605,6 +605,22 @@ while venta != 0:
 print(f"El total de ventas es: {total}.")
 ```
 
+## Conjetura de Collatz
+
+### Python
+
+```python
+n = int(input("Ingrese un numero: "))
+
+while n != 1:
+    if n % 2 == 0:
+        n //= 2
+    else:
+        n = 3*n + 1
+
+    print(n)
+```
+
 ## Algoritmo de Euclides
 
 ### Python
