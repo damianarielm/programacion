@@ -413,20 +413,72 @@ for n in range(100):
     print(n)
 ```
 
+## Codigo Morse
+
+> En 1837, Samuel Morse y Alfred Vail estaban trabajando en un sistema de
+> telégrafo eléctrico. Decidieron usar un método por el cual cada símbolo era
+> transmitido de forma individual como una combinación de rayas y puntos, es
+> decir, señales telegráficas que se diferencian en el tiempo de duración de la
+> señal activa. Morse desarrolló una primera versión de su código en 1837 para
+> enviar números, que luego se debían convertir en mensajes completos usando un
+> libro de claves. Este código fue expandido por Vail en 1841 para incluir
+> letras y otros signos de puntuación, creando así el código actual. Morse
+> reconoció la idoneidad de este sistema y lo patentó junto con el telégrafo
+> eléctrico. Fue conocido como American Morse Code y utilizado en la primera
+> transmisión por telégrafo.
+
+### Python
+
+```python
+texto = input("Ingrese texto: ")
+codigo = ""
+
+for letra in texto:
+    if letra == "a": codigo += ".- "
+    elif letra == "b": codigo += "-... "
+    elif letra == "c": codigo += "-.-. "
+    elif letra == "d": codigo += "-.. "
+    elif letra == "e": codigo += ". "
+    elif letra == "f": codigo += "..-. "
+    elif letra == "g": codigo += "--. "
+    elif letra == "h": codigo += ".... "
+    elif letra == "i": codigo += ".. "
+    elif letra == "j": codigo += ".--- "
+    elif letra == "k": codigo += "-.- "
+    elif letra == "l": codigo += ".-.. "
+    elif letra == "m": codigo += "-- "
+    elif letra == "n": codigo += "-. "
+    elif letra == "o": codigo += "--- "
+    elif letra == "p": codigo += ".--. "
+    elif letra == "q": codigo += "--.- "
+    elif letra == "r": codigo += ".-. "
+    elif letra == "s": codigo += "... "
+    elif letra == "t": codigo += "- "
+    elif letra == "u": codigo += "..- "
+    elif letra == "v": codigo += "...- "
+    elif letra == "w": codigo += ".-- "
+    elif letra == "x": codigo += "-..- "
+    elif letra == "y": codigo += "-.-- "
+    elif letra == "z": codigo += "--.. "
+    else: codigo += letra
+
+print(f"El cifrado es: {codigo}")
+```
+
 ## Fizzbuzz
 
 ### Python
 
 ```python
 for n in range(20):
-    if n % 15 == 0:
-        print("fizzbuzz")
-    elif n % 3 == 0:
-        print("fizz")
-    elif n % 5 == 0:
-        print("buzz")
-    else:
-        print(n)
+if n % 15 == 0:
+print("fizzbuzz")
+elif n % 3 == 0:
+print("fizz")
+elif n % 5 == 0:
+print("buzz")
+else:
+print(n)
 ```
 
 ## Cantidad de vocales
