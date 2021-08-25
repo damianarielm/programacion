@@ -482,6 +482,35 @@ for i in range(2, n + 1):
 print(f"El factorial es: {factorial}.")
 ```
 
+## Trigo y Ajedrez
+
+> Al noroeste de la India (seguramente en el actual Pakistán o Afganistán),
+> había un poderoso brahmán llamado Rai Bhalit, tan rico y rodeado de tantos
+> placeres que de ninguno de ellos podía gozar. Ordenó al más inteligente de
+> sus sirvientes, llamado Sisa, que creara un juego capaz de entretenerle.
+> Pasado algún tiempo Sisa presentó a su señor el ajedrez, un juego que
+> emulaba la guerra y que se jugaba en un tablero con sesenta y cuatro
+> casillas, alternativamente blancas y negras dispuestas en ocho filas y ocho
+> columnas. El brahmán quedó tan encantado que le permitió escoger su
+> recompensa. Sisa le dijo: "Señor, soy hombre modesto, y me conformaría con
+> que me paguéis un grano de trigo por el primer cuadrado, dos por el segundo,
+> cuatro en el tercero, ocho en el cuarto, etc.". El brahmán, encantado por la
+> modesta petición de Sisa accedió en seguida, pero su alegría pronto se
+> trocaría en ira cuando se dio cuenta de que ni con todo el trigo de su país
+> alcanzaría a pagar semejante suma.
+
+### Python
+
+```python
+granos = 1
+total = 0
+for i in range(64):
+    total += granos
+    granos *= 2
+
+print(f"El total de granos es: {total}.")
+```
+
 ## Sucesion de Fibonacci
 
 ### Python
