@@ -490,7 +490,7 @@ print(f"El factorial es: {factorial}.")
 fa = 1
 fb = 1
 
-for i in range(3, 12):
+for i in range(3, 33):
     print(fa)
     fi = fa + fb
     fa, fb = fb, fi
@@ -669,6 +669,21 @@ def factorial(n):
 n = int(input("Ingrese un numero: "))
 
 print(f"El factorial es: {factorial(n)}.")
+```
+
+## Sucesion de Fibonacci
+
+### Python
+
+```python
+def fibonacci(n):
+    if n <= 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+for n in range(30):
+    print(fibonacci(n))
 ```
 
 # Punteros
