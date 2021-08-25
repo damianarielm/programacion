@@ -605,6 +605,20 @@ while venta != 0:
 print(f"El total de ventas es: {total}.")
 ```
 
+## Algoritmo de Euclides
+
+### Python
+
+```
+ra = int(input("Ingrese un numero: "))
+rb = int(input("Ingrese otro numero: "))
+
+while ra % rb != 0:
+    ra, rb = rb, ra % rb
+
+print(f"El MCD es: {rb}.")
+```
+
 ## Adivinar un numero
 
 ### Python
@@ -708,5 +722,11 @@ print(f"El producto es: {ruso(n1, n2)}.")
 ```
 
 # Punteros
+
+## strlen
+
+## strcpy
+
+## realloc
 
 # Otros
