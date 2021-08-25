@@ -798,6 +798,34 @@ print("Correcto!")
 
 # Arreglos
 
+## Cifrado Cesar
+
+> El cifrado César recibe su nombre en honor a Julio César, que, según
+> Suetonio, lo usó con un desplazamiento de tres espacios para proteger sus
+> mensajes importantes de contenido militar:
+
+> "Si tenía que decir algo confidencial, lo escribía usando el cifrado, esto
+> es, cambiando el orden de las letras del alfabeto, para que ni una palabra
+> pudiera entenderse. Si alguien quiere decodificarlo, y entender su
+> significado, debe sustituir la cuarta letra del alfabeto, es decir, la D por
+> la A, y así con las demás."
+
+### Python
+
+```python
+alfabeto = "abcdefghijklmnopqrstuvwxyz"
+
+texto = input("Ingrese un texto: ")
+desplazamiento = int(input("Ingrese desplazamiento: "))
+cifrado = ""
+
+for letra in texto:
+    indice = (alfabeto.index(letra) + desplazamiento) % len(alfabeto)
+    cifrado += alfabeto[indice]
+
+print(f"El texto cifrado es: {cifrado}.")
+```
+
 ## Ordenamiento de burbuja
 
 ### Python
