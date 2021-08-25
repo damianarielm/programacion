@@ -771,6 +771,38 @@ while incognita != pregunta:
 print("Correcto!")
 ```
 
+## Simon
+
+> Simon es un juego electrónico creado por Ralph Baer y Howard J. Morrison en
+> 1978. Tuvo un gran éxito durante los 80.
+
+> El juego de forma aleatoria va iluminando los cuadrantes de colores, y a la
+> vez que se ilumina cada cuadrante emite un sonido propio. Después de esperar,
+> el usuario debe ir introduciendo la secuencia mostrada en el orden correcto,
+> ayudándose de su memoria visual y sonora. Si lo consigue, este responderá con
+> una secuencia más larga, y así sucesivamente.
+
+### Python
+
+```python
+from random import randint
+from time import sleep
+
+simon = jugador = ""
+
+while simon == jugador:
+    simon += str(randint(1, 4))
+
+    for letra in simon:
+        print(letra, end = "", flush = True)
+        sleep(0.5)
+
+    for i in range(100):
+        print("")
+
+    jugador = input("Repita la secuencia: ")
+```
+
 ## Toros y Vacas
 
 ### Python
