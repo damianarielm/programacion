@@ -85,6 +85,21 @@ c = (a*a + b*b + 2*a*b*cos(g)) ** 0.5
 print(f"El lado restante vale {c}.")
 ```
 
+## Distancia entre puntos
+
+### Python
+
+```python
+x1 = int(input("Ingrese x1: "))
+y1 = int(input("Ingrese y1: "))
+x2 = int(input("Ingrese x2: "))
+y2 = int(input("Ingrese y2: "))
+
+distancia = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+
+print(f"La distancia es: {distancia}.")
+```
+
 ## Raices y vertice de una parabola
 
 ### Python
