@@ -461,7 +461,7 @@ print(f"La suma es: {suma}.")
 n = int(input("Ingrese un numero: "))
 
 factorial = 1
-for i in range(1, n + 1):
+for i in range(2, n + 1):
     factorial *= i
 
 print(f"El factorial es: {factorial}.")
@@ -517,6 +517,17 @@ for i in range(1, iteraciones):
     factorial *= i + 1
 
 print(f"El valor de e es: {e}.")
+```
+
+## Numeros palindromos
+
+### Python
+
+```python
+for n1 in range(1, 10):
+    for n2 in range(10):
+        for n3 in range(10):
+            print(f"{n1}{n2}{n3}{n2}{n1}")
 ```
 
 ## Fuerza bruta
