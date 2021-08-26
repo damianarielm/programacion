@@ -502,20 +502,31 @@ for letra in texto:
 print(f"El cifrado es: {codigo}")
 ```
 
+## Binario a decimal
+
+### Python
+
+```python
+n = input("Ingrese un numero en binario: ")
+decimal = 0
+
+for i, digito in enumerate(n):
+    if digito == "1":
+        decimal += 2 ** (len(n) - 1 - i)
+
+print(f"El numero en decimal es: {decimal}.")
+```
+
 ## Fizzbuzz
 
 ### Python
 
 ```python
 for n in range(20):
-if n % 15 == 0:
-print("fizzbuzz")
-elif n % 3 == 0:
-print("fizz")
-elif n % 5 == 0:
-print("buzz")
-else:
-print(n)
+    if n % 15 == 0: print("fizzbuzz")
+    elif n % 3 == 0: print("fizz")
+    elif n % 5 == 0: print("buzz")
+    else: print(n)
 ```
 
 ## Cantidad de vocales
