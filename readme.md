@@ -972,6 +972,25 @@ print("Correcto!")
 
 # Arreglos
 
+## Cadena reversa
+
+### Python
+
+```
+texto = input("Ingrese un texto: ")
+
+reversa = ""
+for indice in range(len(texto) - 1, -1, -1):
+    reversa += texto[indice]
+
+print(f"La cadena reversa es: {reversa}.")
+```
+
+```python
+texto = input("Ingrese un texto: ")
+print(f"La cadena reversa es: {texto[::-1]}.")
+```
+
 ## Cifrado Cesar
 
 > El cifrado César recibe su nombre en honor a Julio César, que, según
