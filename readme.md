@@ -1036,6 +1036,39 @@ for i, n in enumerate(lista):
 print(f"Lista ordenada: {lista}.")
 ```
 
+## Ta-Te-Ti
+
+### Python
+
+```python
+tablero = [ [0, 0, 0], [0, 0, 0], [0, 0, 0] ]
+turno = 0
+juego = True
+
+while juego:
+    for fila in tablero: print(fila)
+
+    if 0 < tablero[0][0] == tablero[0][1] == tablero[0][2]: juego = False
+    if 0 < tablero[1][0] == tablero[1][1] == tablero[2][2]: juego = False
+    if 0 < tablero[2][0] == tablero[2][1] == tablero[2][2]: juego = False
+    if 0 < tablero[0][0] == tablero[1][0] == tablero[2][0]: juego = False
+    if 0 < tablero[0][1] == tablero[1][1] == tablero[2][1]: juego = False
+    if 0 < tablero[0][2] == tablero[1][2] == tablero[2][2]: juego = False
+    if 0 < tablero[0][0] == tablero[1][1] == tablero[2][2]: juego = False
+    if 0 < tablero[0][2] == tablero[1][1] == tablero[2][0]: juego = False
+    if 0 not in tablero[0] + tablero[1] + tablero[2]: juego = False
+
+    if juego:
+        print(f"Turno: jugador {turno + 1}")
+        fila = int(input("Ingrese fila: ")) - 1
+        columna = int(input("Ingrese columna: ")) - 1
+
+        if 0 <= fila <= 2 and 0 <= columna <= 2:
+            if not tablero[fila][columna]:
+                tablero[fila][columna] = turno + 1
+                turno = (turno + 1) % 2
+```
+
 ## Nim
 
 > The Nimatron is a computer that allows one to play the game Nim. It was
