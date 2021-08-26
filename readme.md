@@ -450,6 +450,18 @@ for n in range(100):
     print(n)
 ```
 
+## Factores
+
+### Python
+
+```python
+n = int(input("Ingrese un numero: "))
+
+for factor in range(1, n + 1):
+    if n % factor == 0:
+        print(factor)
+```
+
 ## Codigo Morse
 
 > En 1837, Samuel Morse y Alfred Vail estaban trabajando en un sistema de
