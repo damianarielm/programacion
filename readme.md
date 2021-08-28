@@ -759,6 +759,16 @@ for retrato in range(1, 3 + 1):
 
 ## Problema de Monty Hall
 
+> El concursante debe elegir una puerta entre tres (todas cerradas); el premio
+> consiste en llevarse lo que se encuentra detrás de la elegida. Se sabe con
+> certeza que tras una de ellas se oculta un automóvil, y tras las otras dos
+> hay cabras. Una vez que el concursante haya elegido una puerta y comunicado
+> su elección a los presentes, el presentador, que sabe lo que hay detrás de
+> cada puerta, abrirá una de las otras dos en la que haya una cabra. A
+> continuación, le da la opción al concursante de cambiar, si lo desea, de
+> puerta (tiene dos opciones). ¿Debe el concursante mantener su elección
+> original o escoger la otra puerta?
+
 ### Python
 
 ```python
