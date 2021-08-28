@@ -725,6 +725,21 @@ for l1 in alfabeto:
 
 ## Los cofres de Porcia
 
+> En *El mercader de Venecia*, de Shakespeare, Porcia tenía tres cofres, dentro
+> de uno de los cuales estaba el retrato de Porcia. El pretendiente tenía que
+> elegir uno de los cofres y si tenía suerte (o inteligencia) eligiría el que
+> tenía el retrato, pudiendo así pedir a Porcia por esposa. En la tapa de cada
+> cofre había una inscripción para ayudar al pretendiente a elegir sabiamente:
+
+> Cofre 1: El retrato no está en este cofre.
+
+> Cofre 2: El retrato no está aquí.
+
+> Cofre 3: EL retrato no está en el cofre 1.
+
+> Porcia explicó al pretendiente que de los tres enunciados, a lo sumo uno era
+> verdad.
+
 ### Python
 
 ```python
