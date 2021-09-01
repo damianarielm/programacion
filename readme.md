@@ -82,6 +82,16 @@ promedio = (n1 + n2 + n3 + n4 + n5) / 5
 print(f"El promedio es: {promedio}.")
 ```
 
+```python
+promedio  = int(input("Ingrese un numero: ")) / 5
+promedio += int(input("Ingrese otro numero: ")) / 5
+promedio += int(input("Ingrese otro numero: ")) / 5
+promedio += int(input("Ingrese otro numero: ")) / 5
+promedio += int(input("Ingrese otro numero: ")) / 5
+
+print(f"El promedio es: {promedio}.")
+```
+
 ## Calculo de minutos y segundos
 
 ### Python
@@ -169,7 +179,7 @@ t = b
 b = a
 a = t
 
-print(f"El valor de a es {a}, y el de b es {b}.")
+print(f"Despues del intercambio el valor de a es {a}, y el de b es {b}.")
 ```
 
 ```python
@@ -178,7 +188,7 @@ b = int(input("Ingrese el valor de la variable b: "))
 
 a, b = b, a
 
-print(f"El valor de a es {a}, y el de b es {b}.")
+print(f"Despues del intercambio el valor de a es {a}, y el de b es {b}.")
 ```
 
 ## Numeros romanos
