@@ -1,0 +1,5 @@
+print("El valor de pi es aproximadamente: 3.14159265359")
+print("El valor de e es aproximadamente: 2.71828182846")
+print("El valor de phi es aproximadamente: 1.618033988")
+print("El valor de g es aproximadamente: 9.80665")
+print("El valor de c es aproximadamente: 299792458")
