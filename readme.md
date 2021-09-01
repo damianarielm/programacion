@@ -632,7 +632,7 @@ for letra in texto:
 print(f"La cantidad de vocales es: {vocales}.")
 ```
 
-## Suma de naturales
+## Sumatoria de naturales
 
 ### Python
 
@@ -968,12 +968,12 @@ while opcion != "0":
 n = int(input("Ingrese un numero: "))
 
 while n != 1:
-if n % 2 == 0:
-n //= 2
-else:
-n = 3*n + 1
+    if n % 2 == 0:
+        n //= 2
+    else:
+        n = 3*n + 1
 
-print(n)
+    print(n)
 ```
 
 ## Algoritmo de Euclides
@@ -1050,19 +1050,22 @@ print("Correcto!")
 from random import randint
 from time import sleep
 
-simon = jugador = ""
+simon, jugador = "", ""
 
 while simon == jugador:
     simon += str(randint(1, 4))
 
     for letra in simon:
-        print(letra, end = "", flush = True)
+        for i in range(100): print("")
+        print(letra)
+        sleep(0.5)
+        for i in range(100): print("")
         sleep(0.5)
 
-    for i in range(100):
-        print("")
 
     jugador = input("Repita la secuencia: ")
+
+print(f"Perdiste! La secuencia era: {simon}.")
 ```
 
 ## Toros y Vacas
