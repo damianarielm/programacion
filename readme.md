@@ -518,8 +518,10 @@ print(f"El mas grande es {maximo}.")
 ### Python
 
 ```python
-for n in range(100):
-    print(n)
+maximo = int(input("Ingrese el maximo: "))
+
+for numero in range(maximo + 1):
+    print(numero)
 ```
 
 ## Factores
@@ -606,11 +608,13 @@ print(f"El numero en decimal es: {decimal}.")
 ### Python
 
 ```python
-for n in range(20):
-    if n % 15 == 0: print("fizzbuzz")
-    elif n % 3 == 0: print("fizz")
-    elif n % 5 == 0: print("buzz")
-    else: print(n)
+maximo = int(input("Ingrese el maximo: "))
+
+for numero in range(maximo + 1):
+    if numero % 15 == 0: print("fizzbuzz")
+    elif numero % 3 == 0: print("fizz")
+    elif numero % 5 == 0: print("buzz")
+    else: print(numero)
 ```
 
 ## Cantidad de vocales
@@ -622,7 +626,7 @@ texto = input("Ingrese un texto: ")
 
 vocales = 0
 for letra in texto:
-    if letra == "a" or letra == "e" or letra == "i" or letra == "u":
+    if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
         vocales += 1
 
 print(f"La cantidad de vocales es: {vocales}.")
@@ -731,10 +735,10 @@ for n in range(1, 10):
 ```python
 maximo = int(input("Ingrese un numero: "))
 
-for i in range(10):
-    n = int(input("Ingrese otro numero: "))
+for _ in range(10):
+    numero = int(input("Ingrese otro numero: "))
 
-    if n > maximo: maximo = n
+    if numero > maximo: maximo = numero
 
 print(f"El numero mayor es: {maximo}.")
 ```
