@@ -1547,3 +1547,11 @@ void main() {
 ## Orchard
 
 ## Deep Space D6
+
+## Cuatro en linea
+
+## Quarto
+
+## Batalla naval
+
+## Reversi
