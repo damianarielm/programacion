@@ -1598,3 +1598,7 @@ void main() {
 ## Reversi
 
 ## Oso
+
+## Palm Island
+
+## Shephy
