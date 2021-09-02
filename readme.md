@@ -1537,3 +1537,13 @@ void main() {
 ## Onirim
 
 ## Viernes
+
+## Sliding puzzle
+
+## Juego de la vida
+
+## Sokoban
+
+## Orchard
+
+## Deep Space D6
