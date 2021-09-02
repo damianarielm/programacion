@@ -1099,14 +1099,20 @@ print("Correcto!")
 
 ### Python
 
+```python
+texto = input("Ingrese un texto: ")
+
+print("La cadena reversa es:", end = " ")
+for indice in range(len(texto)):
+    print(f"{texto[len(texto) - 1 - indice]}", end = "")
+```
+
 ```
 texto = input("Ingrese un texto: ")
 
-reversa = ""
+print("La cadena reversa es:", end = " ")
 for indice in range(len(texto) - 1, -1, -1):
-    reversa += texto[indice]
-
-print(f"La cadena reversa es: {reversa}.")
+    print(f"{texto[indice]}", end = "")
 ```
 
 ```python
@@ -1220,30 +1226,29 @@ print(f"Lista ordenada: {lista}.")
 ```python
 tablero = [ [0, 0, 0], [0, 0, 0], [0, 0, 0] ]
 turno = 0
-juego = True
+fin = False
 
-while juego:
+for fila in tablero: print(fila)
+while not fin:
+    print(f"Turno: jugador {turno + 1}")
+    fila = int(input("Ingrese fila: ")) - 1
+    columna = int(input("Ingrese columna: ")) - 1
+
+    if not tablero[fila][columna]:
+        tablero[fila][columna] = turno + 1
+        turno = (turno + 1) % 2
+
     for fila in tablero: print(fila)
 
-    if 0 < tablero[0][0] == tablero[0][1] == tablero[0][2]: juego = False
-    if 0 < tablero[1][0] == tablero[1][1] == tablero[2][2]: juego = False
-    if 0 < tablero[2][0] == tablero[2][1] == tablero[2][2]: juego = False
-    if 0 < tablero[0][0] == tablero[1][0] == tablero[2][0]: juego = False
-    if 0 < tablero[0][1] == tablero[1][1] == tablero[2][1]: juego = False
-    if 0 < tablero[0][2] == tablero[1][2] == tablero[2][2]: juego = False
-    if 0 < tablero[0][0] == tablero[1][1] == tablero[2][2]: juego = False
-    if 0 < tablero[0][2] == tablero[1][1] == tablero[2][0]: juego = False
-    if 0 not in tablero[0] + tablero[1] + tablero[2]: juego = False
-
-    if juego:
-        print(f"Turno: jugador {turno + 1}")
-        fila = int(input("Ingrese fila: ")) - 1
-        columna = int(input("Ingrese columna: ")) - 1
-
-        if 0 <= fila <= 2 and 0 <= columna <= 2:
-            if not tablero[fila][columna]:
-                tablero[fila][columna] = turno + 1
-                turno = (turno + 1) % 2
+    if 0 < tablero[0][0] == tablero[0][1] == tablero[0][2]: fin = True
+    if 0 < tablero[1][0] == tablero[1][1] == tablero[2][2]: fin = True
+    if 0 < tablero[2][0] == tablero[2][1] == tablero[2][2]: fin = True
+    if 0 < tablero[0][0] == tablero[1][0] == tablero[2][0]: fin = True
+    if 0 < tablero[0][1] == tablero[1][1] == tablero[2][1]: fin = True
+    if 0 < tablero[0][2] == tablero[1][2] == tablero[2][2]: fin = True
+    if 0 < tablero[0][0] == tablero[1][1] == tablero[2][2]: fin = True
+    if 0 < tablero[0][2] == tablero[1][1] == tablero[2][0]: fin = True
+    if 0 not in tablero[0] + tablero[1] + tablero[2]: fin = True
 ```
 
 ## Nim
@@ -1265,10 +1270,9 @@ montones += ["*" * int(input("Ingrese cantidad del tercer monton: "))]
 
 turno = 0
 
-while "".join(montones):
-    print(f"1: {montones[0]}")
-    print(f"2: {montones[1]}")
-    print(f"3: {montones[2]}")
+while montones[0] or montones[1] or montones[2]:
+    for i in range(len(montones)):
+        print(f"{i + 1}: {montones[i]}")
 
     monton = int(input(f"Jugador {turno + 1}, elija un monton: ")) - 1
 
@@ -1301,16 +1305,17 @@ discos = int(input("Ingrese numero de discos: "))
 torres = [ list(range(discos))[::-1], [], [] ]
 
 while len(torres[2]) != discos:
-    print(f"Torre 1: {torres[0]}.")
-    print(f"Torre 2: {torres[1]}.")
-    print(f"Torre 3: {torres[2]}.\n")
+    for i in range(len(torres)):
+        print(f"Torre {i + 1}: {torres[i]}.")
 
     origen = int(input("Ingrese torre de origen: ")) - 1
     destino = int(input("Ingrese torre de destino: ")) - 1
 
     if origen < 4 and destino < 4 and torres[origen]:
         if not torres[destino] or torres[origen][-1] < torres[destino][-1]:
-            torres[destino] += [torres[origen].pop()]
+            torres[destino] += [ torres[origen].pop() ]
+
+print("Ganaste!")
 ```
 
 ## Ahorcado
@@ -1325,8 +1330,8 @@ errores = ""
 for i in range(100): print("")
 
 while respuesta != palabra and len(errores) < 7:
-    print(" ".join(respuesta))
-    print(f"Errores: {errores}")
+    for letra in respuesta: print(f"{letra}", end = "")
+    print(f"\nErrores: {errores}")
     intento = input("Ingrese una letra: ")
 
     for i, letra in enumerate(palabra):
