@@ -93,46 +93,25 @@
 
 # Proyectos
 
-## Corrector Ortografico
-
-## Onirim
-
-## Viernes
-
-## Sliding puzzle
-
-## Juego de la vida
-
-## Sokoban
-
-## Orchard
-
-## Deep Space D6
-
-## Cuatro en linea
-
-## Quarto
-
-## Batalla naval
-
-## Reversi
-
-## Oso
-
-## Palm Island
-
-## Shephy
-
-## Zogar's Revenge
-
-## Qwixx
-
-## Sylvion
-
-## Nautilion
-
-## Castellion
-
-## Sagrada
-
-## Quien quiere ser millonario?
+* Corrector Ortografico
+* Onirim
+* Viernes
+* Sliding puzzle
+* Juego de la vida
+* Sokoban
+* Orchard
+* Deep Space D6
+* Cuatro en linea
+* Quarto
+* Batalla naval
+* Reversi
+* Oso
+* Palm Island
+* Shephy
+* Zogar's Revenge
+* Qwixx
+* Sylvion
+* Nautilion
+* Castellion
+* Sagrada
+* Quien quiere ser millonario?
