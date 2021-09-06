@@ -115,3 +115,7 @@
 * Castellion
 * Sagrada
 * Quien quiere ser millonario?
+* That's Pretty Clever!
+* Hostage Negotiator
+* Babylon
+* Pelea de insultos
