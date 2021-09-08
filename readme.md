@@ -128,3 +128,5 @@
 * Chomp
 * Kayles
 * Toads and Frogs
+* Time's Up
+* Pistas Cruzadas
