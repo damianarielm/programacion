@@ -72,6 +72,7 @@
 * Ordenamiento de burbuja
 * Ordenamiento por insercion
 * Ta-Te-Ti
+* Babylon
 * Nim
 * Torres de Hanoi
 * Ahorcado
@@ -119,7 +120,6 @@
 * Quien quiere ser millonario?
 * That's Pretty Clever!
 * Hostage Negotiator
-* Babylon
 * Pelea de insultos
 * Tak
 * L Game
