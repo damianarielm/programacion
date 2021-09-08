@@ -4,6 +4,7 @@
 
 * Constantes importantes
 * Operadores aritmeticos
+* Calculo de e
 * Calculo de promedio
 * Calculo de minutos y segundos
 * Calculo de hipotenusa

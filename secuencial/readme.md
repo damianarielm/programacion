@@ -64,6 +64,27 @@ print(f"La division entera es {n1 // n2}.")
 print(f"La potencia es {n1 ** n2}.")
 ```
 
+## Calculo de e
+
+El número *e*, conocido en ocasiones como número de Euler o constante de
+Napier, fue reconocido y utilizado por primera vez por el matemático escocés
+John Napier, quien introdujo el concepto de logaritmo en el cálculo matemático.
+
+Juega un papel importante en el cálculo y en el análisis matemático, en la
+definición de la función más importante de la matemática, la función
+exponencial, así como *pi*, lo es de la geometría y el número *i*, del
+análisis complejo y del álgebra.
+
+### Python
+
+```python
+n = int(input("Ingrese exponente: "))
+
+e = (1 + 1/n) ** n
+
+print(f"El numero e es aproximadamente: {e}.")
+```
+
 ## Calculo de promedio
 
 ### Python
