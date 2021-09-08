@@ -2,6 +2,11 @@
 
 ## Busqueda lineal
 
+En informática, la búsqueda lineal o la búsqueda secuencial es un método para
+encontrar un valor objetivo dentro de una lista.Ésta comprueba secuencialmente
+cada elemento de la lista para el valor objetivo hasta que es encontrado o
+hasta que todos los elementos hayan sido comparados.
+
 ### Python
 
 ```python
@@ -117,9 +122,8 @@ for i in range(cantidad):
 
 espia = choice(jugadores)
 
-for _ in range(100): print("")
 for jugador in jugadores:
-    input(f"{jugador}, presiona enter para ver tu rol.")
+    input(f"\n{jugador}, presiona enter para ver tu rol.")
     if jugador == espia:
         print("Rol: espia.")
     else:
@@ -127,8 +131,7 @@ for jugador in jugadores:
     input("Presione enter para borrar la pantalla.")
     for _ in range(100): print("")
 
-print("Lista de lugares:")
-print(lugares)
+print(f"Lista de lugares: {lugares}.")
 print("\nComienza el juego!")
 input("Presiona enter para revelar los roles.")
 print(f"\nEspia: {espia}.")
@@ -137,13 +140,20 @@ print(f"Lugar: {lugar}.")
 
 ## Busqueda binaria
 
+En ciencias de la computación y matemáticas, la búsqueda binaria, también
+conocida como búsqueda de intervalo medio o búsqueda logarítmica, es un
+algoritmo de búsqueda que encuentra la posición de un valor en un array
+ordenado. Compara el valor con el elemento en el medio del array, si no son
+iguales, la mitad en la cual el valor no puede estar es eliminada y la búsqueda
+continúa en la mitad restante hasta que el valor se encuentre.
+
 ### Python
 
 ```python
 lista = [1, 2, 4, 6, 55, 190, 200, 800, 1000, 12000]
 
 print(f"Lista: {lista}.")
-n = int(input("Ingrese numero a buscar: "))
+buscar = int(input("Ingrese numero a buscar: "))
 
 izquierda = 0
 derecha = len(lista) - 1
@@ -151,10 +161,10 @@ derecha = len(lista) - 1
 while izquierda <= derecha:
     medio = izquierda + (derecha - izquierda) // 2
 
-    if lista[medio] == n:
+    if lista[medio] == buscar:
         print(f"El elemento se encuentra en la posicion {medio + 1}.")
         derecha = -1
-    elif lista[medio] < n:
+    elif lista[medio] < buscar:
         izquierda = medio + 1
     else:
         derecha = medio - 1
@@ -164,6 +174,12 @@ if derecha != -1: print("El elemento no se encuentra.")
 
 ## Ordenamiento de burbuja
 
+La Ordenación de burbuja (Bubble Sort en inglés) es un sencillo algoritmo de
+ordenamiento. Funciona revisando cada elemento de la lista que va a ser
+ordenada con el siguiente, intercambiándolos de posición si están en el orden
+equivocado. Es necesario revisar varias veces toda la lista hasta que no se
+necesiten más intercambios, lo cual significa que la lista está ordenada.
+
 ### Python
 
 ```python
@@ -172,7 +188,7 @@ lista = [200 ,190, 1200, 1, 2, 4, 55, 1000, 6, 800]
 print(f"Lista desordenada: {lista}.")
 
 for i in range(len(lista)):
-    for j in range(0, len(lista) - 1):
+    for j in range(len(lista) - 1):
         if lista[j] > lista[j + 1]:
             lista[j], lista[j + 1] = lista[j + 1], lista[j]
 
@@ -180,6 +196,18 @@ print(f"Lista ordenada: {lista}.")
 ```
 
 ## Ordenamiento por insercion
+
+El ordenamiento por inserción (insertion sort en inglés) es una manera muy
+natural de ordenar para un ser humano, y puede usarse fácilmente para ordenar
+un mazo de cartas numeradas en forma arbitraria.
+
+Inicialmente se tiene un solo elemento, que obviamente es un conjunto ordenado.
+Después, cuando hay *k* elementos ordenados de menor a mayor, se toma el
+elemento *k+1* y se compara con todos los elementos ya ordenados, deteniéndose
+cuando se encuentra un elemento menor (todos los elementos mayores han sido
+desplazados una posición a la derecha) o cuando ya no se encuentran elementos
+(todos los elementos fueron desplazados y este es el más pequeño). En este
+punto se inserta el elemento *k+1* debiendo desplazarse los demás elementos.
 
 ### Python
 
@@ -309,8 +337,8 @@ errores = ""
 for i in range(100): print("")
 
 while respuesta != palabra and len(errores) < 7:
-    for letra in respuesta: print(f"{letra}", end = "")
-    print(f"\nErrores: {errores}")
+    print(respuesta)
+    print(f"Errores: {errores}.")
     intento = input("Ingrese una letra: ")
 
     for i, letra in enumerate(palabra):

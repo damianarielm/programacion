@@ -16,9 +16,8 @@ for i in range(cantidad):
 
 espia = choice(jugadores)
 
-for _ in range(100): print("")
 for jugador in jugadores:
-    input(f"{jugador}, presiona enter para ver tu rol.")
+    input(f"\n{jugador}, presiona enter para ver tu rol.")
     if jugador == espia:
         print("Rol: espia.")
     else:
@@ -26,8 +25,7 @@ for jugador in jugadores:
     input("Presione enter para borrar la pantalla.")
     for _ in range(100): print("")
 
-print("Lista de lugares:")
-print(lugares)
+print(f"Lista de lugares: {lugares}.")
 print("\nComienza el juego!")
 input("Presiona enter para revelar los roles.")
 print(f"\nEspia: {espia}.")

@@ -5,8 +5,8 @@ errores = ""
 for i in range(100): print("")
 
 while respuesta != palabra and len(errores) < 7:
-    for letra in respuesta: print(f"{letra}", end = "")
-    print(f"\nErrores: {errores}")
+    print(respuesta)
+    print(f"Errores: {errores}.")
     intento = input("Ingrese una letra: ")
 
     for i, letra in enumerate(palabra):
