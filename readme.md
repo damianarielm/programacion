@@ -1,6 +1,6 @@
 [[_TOC_]]
 
-# Secuencial
+# [Secuencial](secuencial)
 
 * Constantes importantes
 * Operadores aritmeticos
@@ -14,7 +14,7 @@
 * Intercambio de variables
 * Numeros romanos
 
-# Seleccion
+# [Seleccion](seleccion)
 
 * Valor absoluto
 * Paridad
@@ -28,7 +28,7 @@
 * Chequeo de año bisiesto
 * Maximo de 5 numeros
 
-# Ciclo definido
+# [Ciclo definido](definido)
 
 * Numeros naturales
 * Factores
@@ -48,7 +48,7 @@
 * Los cofres de Porcia
 * Problema de Monty Hall
 
-# Ciclo indefinido
+# [Ciclo indefinido](indefinido)
 
 * Contraseña
 * Decimal a binario
@@ -62,7 +62,7 @@
 * Simon
 * Toros y Vacas
 
-# Arreglos
+# [Arreglos](arreglos)
 
 * Busqueda lineal
 * Cadena reversa
@@ -78,14 +78,14 @@
 * Ahorcado
 * Memoria
 
-# Recursion
+# [Recursion](recursion)
 
 * Factorial
 * Sucesion de Fibonacci
 * Algoritmo del Campesino Ruso
 * Torres de Hanoi
 
-# Punteros
+# [Punteros](punteros)
 
 * strlen
 * strcpy
@@ -96,8 +96,8 @@
 
 # Proyectos
 
-* Corrector Ortografico
-* Onirim
+* [Corrector Ortografico](https://github.com/damianarielm/pyspell)
+* [Onirim](https://github.com/damianarielm/onirim)
 * Viernes
 * Sliding puzzle
 * Juego de la vida
@@ -110,8 +110,8 @@
 * Reversi
 * Oso
 * Palm Island
-* Shephy
-* Zogar's Revenge
+* [Shephy](https://github.com/damianarielm/shephy)
+* [Zogar's Revenge](https://github.com/damianarielm/zogar)
 * Qwixx
 * Sylvion
 * Nautilion
