@@ -81,6 +81,7 @@
 * Factorial
 * Sucesion de Fibonacci
 * Algoritmo del Campesino Ruso
+* Torres de Hanoi
 
 # Punteros
 
