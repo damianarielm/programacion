@@ -92,16 +92,31 @@ print(f"El numero en decimal es: {decimal}.")
 
 ## Fizzbuzz
 
+Fizz buzz is a group word game for children to teach them about division.
+Players take turns to count incrementally, replacing any number divisible by
+three with the word "fizz", and any number divisible by five with the word
+"buzz".
+
 ### Python
 
 ```python
 maximo = int(input("Ingrese el maximo: "))
 
-for numero in range(maximo + 1):
+for numero in range(1, maximo + 1):
     if numero % 15 == 0: print("fizzbuzz")
     elif numero % 3 == 0: print("fizz")
     elif numero % 5 == 0: print("buzz")
     else: print(numero)
+```
+
+```python
+maximo = int(input("Ingrese el maximo: "))
+
+for numero in range(1, maximo + 1):
+    respuesta = ""
+    if numero % 3 == 0: respuesta += "fizz"
+    if numero % 5 == 0: respuesta += "buzz"
+    print(numero if not respuesta else respuesta)
 ```
 
 ## Cantidad de vocales
@@ -114,6 +129,17 @@ texto = input("Ingrese un texto: ")
 vocales = 0
 for letra in texto:
     if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+        vocales += 1
+
+print(f"La cantidad de vocales es: {vocales}.")
+```
+
+```python
+texto = input("Ingrese un texto: ")
+
+vocales = 0
+for letra in texto:
+    if letra in "aeiou":
         vocales += 1
 
 print(f"La cantidad de vocales es: {vocales}.")
@@ -232,6 +258,12 @@ print(f"El numero mayor es: {maximo}.")
 
 ## Calculo de pi
 
+En matemáticas, la fórmula de Leibniz sirve para el cálculo de π, nombrada así
+en honor a Gottfried Leibniz.
+
+Se conoce como producto de Wallis a una expresión utilizada para representar el
+valor de π que fue descubierta por John Wallis en 1655.
+
 ### Python
 
 ```python
@@ -245,7 +277,27 @@ pi *= 4
 print(f"El valor calculado de pi es: {pi}.")
 ```
 
+```python
+iteraciones = int(input("Ingrese la cantidad de iteraciones: "))
+
+pi = 1
+for i in range(1, iteraciones + 1):
+    pi *= (2*i / (2*i - 1)) * (2*i / (2*i + 1))
+pi *= 2
+
+print(f"El valor calculado de pi es: {pi}.")
+```
+
 ## Calculo de e
+
+El número *e*, conocido en ocasiones como número de Euler o constante de
+Napier, fue reconocido y utilizado por primera vez por el matemático escocés
+John Napier, quien introdujo el concepto de logaritmo en el cálculo matemático.
+
+Juega un papel importante en el cálculo y en el análisis matemático, en la
+definición de la función más importante de la matemática, la función
+exponencial, así como *pi*, lo es de la geometría y el número *i*, del
+análisis complejo y del álgebra.
 
 ### Python
 
@@ -263,6 +315,10 @@ print(f"El valor de e es: {e}.")
 
 ## Numeros palindromos
 
+Un palíndromo, también llamado palíndromo, palíndroma o palindroma, es una
+palabra o frase que se lee igual en un sentido que en otro (por ejemplo; Ana,
+Anna, Otto). Si se trata de números en lugar de letras, se llama capicúa.
+
 ### Python
 
 ```python
@@ -273,6 +329,10 @@ for n1 in range(1, 10):
 ```
 
 ## Fuerza bruta
+
+En criptografía, se denomina ataque de fuerza bruta a la forma de recuperar una
+clave probando todas las combinaciones posibles hasta encontrar aquella que
+permite el acceso.
 
 ### Python
 
