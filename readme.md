@@ -121,3 +121,10 @@
 * Hostage Negotiator
 * Babylon
 * Pelea de insultos
+* Tak
+* L Game
+* Hexapawn
+* 1D Chess
+* Chomp
+* Kayles
+* Toads and Frogs
