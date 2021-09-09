@@ -130,3 +130,4 @@
 * Toads and Frogs
 * Time's Up
 * Pistas Cruzadas
+* Sushi Go!
