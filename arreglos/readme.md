@@ -274,6 +274,50 @@ while not fin:
     if 0 not in tablero[0] + tablero[1] + tablero[2]: fin = True
 ```
 
+## Juego del 15
+
+The 15 puzzle (also called Gem Puzzle, Boss Puzzle, Game of Fifteen, Mystic
+Square and many others) is a sliding puzzle having 15 square tiles numbered
+1–15 in a frame that is 4 tiles high and 4 tiles wide, leaving one unoccupied
+tile position. Tiles in the same row or column of the open position can be
+moved by sliding them horizontally or vertically, respectively. The goal of the
+puzzle is to place the tiles in numerical order.
+
+### Python
+
+```python
+tablero = [ [1, 2, 0, 3], [9, 8, 4, 7], [6, 5, 11, 12], [13, 10, 14, 15] ]
+final = [ [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 0] ]
+
+while tablero != final:
+    for fila in tablero:
+        for elemento in fila:
+            print(f"{elemento:02d}", end = " ")
+        print("")
+
+    print("\n8 - Arriba.")
+    print("4 - Izquierda.")
+    print("6 - Derecha.")
+    print("2 - Abajo.")
+    movimiento = int(input("Ingrese un movimiento: "))
+
+    for i, fila in enumerate(tablero):
+        for j, elemento in enumerate(fila):
+            if elemento == 0:
+                x, y = i, j
+
+    if movimiento == 8:
+        tablero[x][y], tablero[x - 1][y] = tablero[x - 1][y], tablero[x][y]
+    elif movimiento == 2:
+        tablero[x][y], tablero[x + 1][y] = tablero[x + 1][y], tablero[x][y]
+    elif movimiento == 4:
+        tablero[x][y], tablero[x][y - 1] = tablero[x][y - 1], tablero[x][y]
+    else:
+        tablero[x][y], tablero[x][y + 1] = tablero[x][y + 1], tablero[x][y]
+
+print("Ganaste!")
+```
+
 ## Babylon
 
 The game consists of twelve tiles in four colors, and the tiles are scattered

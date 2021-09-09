@@ -72,6 +72,7 @@
 * Ordenamiento de burbuja
 * Ordenamiento por insercion
 * Ta-Te-Ti
+* Juego del 15
 * Babylon
 * Nim
 * Torres de Hanoi
@@ -100,7 +101,6 @@
 * [Corrector Ortografico](https://github.com/damianarielm/pyspell)
 * [Onirim](https://github.com/damianarielm/onirim)
 * Viernes
-* Sliding puzzle
 * Juego de la vida
 * Sokoban
 * Orchard
