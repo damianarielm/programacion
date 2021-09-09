@@ -77,6 +77,7 @@
 * Torres de Hanoi
 * Ahorcado
 * Memoria
+* Quarto
 
 # [Recursion](recursion)
 
@@ -105,7 +106,6 @@
 * Orchard
 * Deep Space D6
 * Cuatro en linea
-* Quarto
 * Batalla naval
 * Reversi
 * Oso
