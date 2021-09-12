@@ -131,3 +131,9 @@
 * Time's Up
 * Pistas Cruzadas
 * Sushi Go!
+* Gobblet
+* BlackJack
+* Elige tu propia aventura
+* The Manhattan Project - Chain Reaction
+* Just One
+* Las Vegas
