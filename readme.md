@@ -19,6 +19,7 @@
 * Valor absoluto
 * Paridad
 * Signo
+* Arboles de decision
 * Chequeo de vocales
 * Ordenar numeros
 * Determinacion de signo zodiacal
