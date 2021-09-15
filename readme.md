@@ -138,3 +138,5 @@
 * The Manhattan Project - Chain Reaction
 * Just One
 * Las Vegas
+* Four Field Kono
+* Dao
