@@ -140,3 +140,6 @@
 * Las Vegas
 * Four Field Kono
 * Dao
+* Cublino
+* Ninja Dice
+* Papers, Please
