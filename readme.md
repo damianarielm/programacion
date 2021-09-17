@@ -143,3 +143,5 @@
 * Cublino
 * Ninja Dice
 * Papers, Please
+* Hive
+* No, Thanks
