@@ -145,3 +145,6 @@
 * Papers, Please
 * Hive
 * No, Thanks
+* Avignon: A Clash of Popes
+* Hierarchy
+* Food Chain Island
