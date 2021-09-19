@@ -68,6 +68,7 @@
 * Busqueda lineal
 * Cadena reversa
 * Cifrado Cesar
+* Pretense
 * Spyfall
 * Busqueda binaria
 * Ordenamiento de burbuja
@@ -148,5 +149,4 @@
 * Avignon: A Clash of Popes
 * Hierarchy
 * Food Chain Island
-* Pretense
 * Mini Rogue
