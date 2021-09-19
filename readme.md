@@ -148,3 +148,5 @@
 * Avignon: A Clash of Popes
 * Hierarchy
 * Food Chain Island
+* Pretense
+* Mini Rogue
