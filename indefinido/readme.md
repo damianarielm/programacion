@@ -114,7 +114,7 @@ while n != 1:
 
 ### Python
 
-```
+```python
 ra = int(input("Ingrese un numero: "))
 rb = int(input("Ingrese otro numero: "))
 
