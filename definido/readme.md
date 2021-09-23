@@ -428,9 +428,9 @@ if jugadores == 11: leales, agentes, choferes, comodines = 4, 2, 2, 2
 if jugadores == 12: leales, agentes, choferes, comodines = 5, 2, 2, 2
 
 print("1 - Ninguno.")
-if leales: print("2 - Elegir rol leal.")
-if agentes: print("3 - Elegir rol agente.")
-if choferes: print("4 - Elegir rol chofer.")
+print("2 - Leal.")
+print("3 - Agente.")
+print("4 - Chofer.")
 opcion = int(input("Jugador 2, elija rol a eliminar: "))
 if opcion == 2: leales -= 1
 if opcion == 3: agentes -= 1
@@ -457,5 +457,12 @@ for i in range(1, jugadores):
     if opcion == 4: choferes -= 1
 
 for _ in range(99): print("")
-print("Comienza el juego!")
+print(f"Diamantes: {diamantes}.")
+print(f"Leales: {leales}.")
+print(f"Agentes: {agentes}.")
+print(f"Choferes: {choferes}.")
+print(f"Comodines: {comodines}.")
+print(f"Comienza el juego!")
+input("Ingrese enter para borrar la pantalla.")
+for _ in range(99): print("")
 ```
