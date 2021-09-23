@@ -48,6 +48,7 @@
 * Fuerza bruta
 * Los cofres de Porcia
 * Problema de Monty Hall
+* Mafia de Cuba
 
 # [Ciclo indefinido](indefinido)
 
@@ -150,4 +151,3 @@
 * Hierarchy
 * Food Chain Island
 * Mini Rogue
-* Mafia de Cuba
