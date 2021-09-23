@@ -151,3 +151,9 @@
 * Hierarchy
 * Food Chain Island
 * Mini Rogue
+* Onitama
+* The Duke
+* Yinsh
+* Dvonn
+* Kamisado
+* Glux
