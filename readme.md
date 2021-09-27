@@ -157,3 +157,5 @@
 * Dvonn
 * Kamisado
 * Glux
+* High Society
+* Dara
