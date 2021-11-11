@@ -160,3 +160,7 @@
 * High Society
 * Dara
 * Otrio
+* Coloretto
+* Horrified
+* Go
+* Santorini
