@@ -77,6 +77,16 @@ else:
     print("El numero es negativo")
 ```
 
+```python
+n = int(input("Ingrese un numero: "))
+
+if n > 0: signo = "positivo"
+elif n == 0: signo = "cero"
+else: signo = "negativo"
+
+print("El numero es {signo}.")
+```
+
 ## Arboles de decision
 
 Un árbol de decisión es un modelo de predicción utilizado en diversos ámbitos
