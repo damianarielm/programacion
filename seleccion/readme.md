@@ -261,6 +261,12 @@ print(f"Las raices son {x1}, {x2} y {x3}.")
 
 ## Validacion y clasificacion de triangulos
 
+La desigualdad triangular o desigualdad de Minkowski es un teorema de geometría
+euclidiana que establece:
+
+> En todo triángulo la suma de las longitudes de dos lados cualesquiera es
+> siempre mayor a la longitud del lado restante.
+
 ### Python
 
 ```python
@@ -303,6 +309,35 @@ else:
 ```
 
 ## Chequeo de año bisiesto
+
+Un año bisiesto se añade para corregir el desfase que existe entre la duración
+del año trópico (365,242189 días) y el año calendario de (365 días). Esto
+requiere que cada cuatro años se corrija el año calendario por una acumulación
+no contabilizada de aproximadamente 1/4 de día por año que equivale a un día
+extra.
+
+En el calendario juliano se consideraban bisiestos los años divisibles entre
+cuatro, resultando años de 365,25 días. Esto supone un adelanto de unos 11,25
+minutos por año respecto al año trópico. Puede no parecer mucho, pero solo en
+500 años supondría un desfase de casi cuatro días. Se hacía necesario acortar
+el año, y así el calendario gregoriano establece:
+
+> Año bisiesto es el divisible entre 4, **salvo que sea año secular** -último
+> de cada siglo, terminado en "00"-, en cuyo caso también ha de ser divisible
+> entre 400.
+
+Es decir, se determinan dos grupos de años: los **no seculares** y los
+**seculares**. Los primeros han de ser múltiplos de 4, mientras que los
+segundos habrán de serlo de 400. De esta manera se eliminan como bisiestos a 3
+de cada 4 años seculares. De esta forma, los años 1800 y 1900 pese a ser
+divisibles por 4, no lo son por 400, por lo que fueron años comunes. Por su
+parte, el año 2000 es divisible tanto por 4 como por 400, por lo tanto sí fue
+un año bisiesto.
+
+El ciclo juliano de 4 años da paso a uno gregoriano de 400 en el que hay 97
+bisiestos y 303 comunes, resultando años de 365,2425 días. La diferencia con el
+año trópico queda ahora reducida a menos de medio minuto por año (26,9 segundos
+aproximadamente).
 
 ### Python
 
