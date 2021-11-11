@@ -126,6 +126,11 @@ print(f"La cantidad equivale a {minutos} minutos o {segundos} segundos.")
 
 ## Calculo de hipotenusa
 
+En matemáticas, el teorema de Pitágoras es una relación fundamental en
+geometría euclidiana entre los tres lados de un triángulo rectángulo. Afirma
+que el área del cuadrado cuyo lado es la hipotenusa (el lado opuesto al ángulo
+recto) es igual a la suma de las áreas de los cuadrados de los otros dos lados.
+
 ### Python
 
 ```python
@@ -139,14 +144,20 @@ print(f"El valor de la hipotenusa es {hipotenusa}.")
 
 ## Teorema del coseno
 
+El teorema del coseno es una generalización del teorema de Pitágoras en los
+triángulos rectángulos en trigonometría.
+
+El teorema relaciona un lado de un triángulo cualquiera con los otros dos y con
+el coseno del ángulo formado por estos dos lados.
+
 ### Python
 
 ```python
 from math import cos
 
 a = int(input("Ingrese el valor de un lado: "))
-b = int(input("Ingrese el valor de un lado: "))
-g = float(input("Ingrese el angulo que conforman en radianes: "))
+b = int(input("Ingrese el valor de otro lado: "))
+g = float(input("Ingrese el angulo que conforman, en radianes: "))
 
 c = (a*a + b*b + 2*a*b*cos(g)) ** 0.5
 
@@ -163,7 +174,7 @@ y1 = int(input("Ingrese y1: "))
 x2 = int(input("Ingrese x2: "))
 y2 = int(input("Ingrese y2: "))
 
-distancia = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+distancia = ((x2 - x1)**2 + (y2 - y1)**2) ** 0.5
 
 print(f"La distancia es: {distancia}.")
 ```
@@ -211,6 +222,14 @@ print(f"Despues del intercambio el valor de a es {a}, y el de b es {b}.")
 ```
 
 ## Numeros romanos
+
+La numeración romana es un sistema de numeración que se desarrolló en la
+Antigua Roma y se utilizó en todo el Imperio romano, manteniéndose con
+posterioridad a su desaparición y todavía utilizado en algunos ámbitos.
+
+Está basado en la numeración etrusca, la cual, a diferencia de la numeración
+decimal que está basada en un sistema posicional, se basa en un sistema aditivo
+(cada signo representa un valor que se va sumando al anterior).
 
 ### Python
 
