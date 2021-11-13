@@ -322,6 +322,15 @@ for _ in range(10):
 print(f"El numero mayor es: {maximo}.")
 ```
 
+```python
+maximo = int(input("Ingrese un numero: "))
+
+for _ in range(10):
+    maximo = max(maximo, int(input("Ingrese otro numero: ")))
+
+print(f"El numero mayor es: {maximo}.")
+```
+
 ## Calculo de pi
 
 En matemáticas, la fórmula de Leibniz sirve para el cálculo de π, nombrada así
