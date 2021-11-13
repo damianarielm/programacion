@@ -29,6 +29,12 @@ while n >= 1:
 print(f"El numero en binario es: {binario}.")
 ```
 
+```python
+n = int(input("Ingrese un numero positivo: "))
+
+print(f"El numero en binario es: {n:b}.")
+```
+
 ## Chequeo de primalidad
 
 En matemáticas, un número primo es un número natural mayor que 1 que tiene
