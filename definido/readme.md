@@ -25,17 +25,17 @@ for factor in range(1, n + 1):
 
 ## Codigo Morse
 
-> En 1837, Samuel Morse y Alfred Vail estaban trabajando en un sistema de
-> telégrafo eléctrico. Decidieron usar un método por el cual cada símbolo era
-> transmitido de forma individual como una combinación de rayas y puntos, es
-> decir, señales telegráficas que se diferencian en el tiempo de duración de la
-> señal activa. Morse desarrolló una primera versión de su código en 1837 para
-> enviar números, que luego se debían convertir en mensajes completos usando un
-> libro de claves. Este código fue expandido por Vail en 1841 para incluir
-> letras y otros signos de puntuación, creando así el código actual. Morse
-> reconoció la idoneidad de este sistema y lo patentó junto con el telégrafo
-> eléctrico. Fue conocido como American Morse Code y utilizado en la primera
-> transmisión por telégrafo.
+En 1837, Samuel Morse y Alfred Vail estaban trabajando en un sistema de
+telégrafo eléctrico. Decidieron usar un método por el cual cada símbolo era
+transmitido de forma individual como una combinación de rayas y puntos, es
+decir, señales telegráficas que se diferencian en el tiempo de duración de la
+señal activa. Morse desarrolló una primera versión de su código en 1837 para
+enviar números, que luego se debían convertir en mensajes completos usando un
+libro de claves. Este código fue expandido por Vail en 1841 para incluir
+letras y otros signos de puntuación, creando así el código actual. Morse
+reconoció la idoneidad de este sistema y lo patentó junto con el telégrafo
+eléctrico. Fue conocido como American Morse Code y utilizado en la primera
+transmisión por telégrafo.
 
 ### Python
 
@@ -171,6 +171,15 @@ print(f"La suma es: {suma}.")
 
 ## Factorial
 
+El factorial de un entero positivo n, el factorial de n o n factorial se define
+en principio como el producto de todos los números enteros positivos desde 1
+(es decir, los números naturales) hasta n.
+
+La operación de factorial aparece en muchas áreas de las matemáticas,
+particularmente en combinatoria y análisis matemático. De manera fundamental el
+factorial de n representa el número de formas distintas de ordenar n objetos
+distintos (elementos sin repetición).
+
 ### Python
 
 ```python
@@ -185,20 +194,19 @@ print(f"El factorial es: {factorial}.")
 
 ## Trigo y Ajedrez
 
-> Al noroeste de la India (seguramente en el actual Pakistán o Afganistán),
-> había un poderoso brahmán llamado Rai Bhalit, tan rico y rodeado de tantos
-> placeres que de ninguno de ellos podía gozar. Ordenó al más inteligente de
-> sus sirvientes, llamado Sisa, que creara un juego capaz de entretenerle.
-> Pasado algún tiempo Sisa presentó a su señor el ajedrez, un juego que
-> emulaba la guerra y que se jugaba en un tablero con sesenta y cuatro
-> casillas, alternativamente blancas y negras dispuestas en ocho filas y ocho
-> columnas. El brahmán quedó tan encantado que le permitió escoger su
-> recompensa. Sisa le dijo: "Señor, soy hombre modesto, y me conformaría con
-> que me paguéis un grano de trigo por el primer cuadrado, dos por el segundo,
-> cuatro en el tercero, ocho en el cuarto, etc.". El brahmán, encantado por la
-> modesta petición de Sisa accedió en seguida, pero su alegría pronto se
-> trocaría en ira cuando se dio cuenta de que ni con todo el trigo de su país
-> alcanzaría a pagar semejante suma.
+Al noroeste de la India (seguramente en el actual Pakistán o Afganistán), había
+un poderoso brahmán llamado Rai Bhalit, tan rico y rodeado de tantos placeres
+que de ninguno de ellos podía gozar. Ordenó al más inteligente de sus
+sirvientes, llamado Sisa, que creara un juego capaz de entretenerle. Pasado
+algún tiempo Sisa presentó a su señor el ajedrez, un juego que emulaba la
+guerra y que se jugaba en un tablero con sesenta y cuatro casillas,
+alternativamente blancas y negras dispuestas en ocho filas y ocho columnas. El
+brahmán quedó tan encantado que le permitió escoger su recompensa. Sisa le
+dijo: "Señor, soy hombre modesto, y me conformaría con que me paguéis un grano
+de trigo por el primer cuadrado, dos por el segundo, cuatro en el tercero, ocho
+en el cuarto, etc.". El brahmán, encantado por la modesta petición de Sisa
+accedió en seguida, pero su alegría pronto se trocaría en ira cuando se dio
+cuenta de que ni con todo el trigo de su país alcanzaría a pagar semejante suma.
 
 ### Python
 
@@ -348,11 +356,11 @@ for l1 in alfabeto:
 
 ## Los cofres de Porcia
 
-> En *El mercader de Venecia*, de Shakespeare, Porcia tenía tres cofres, dentro
-> de uno de los cuales estaba el retrato de Porcia. El pretendiente tenía que
-> elegir uno de los cofres y si tenía suerte (o inteligencia) eligiría el que
-> tenía el retrato, pudiendo así pedir a Porcia por esposa. En la tapa de cada
-> cofre había una inscripción para ayudar al pretendiente a elegir sabiamente:
+En *El mercader de Venecia*, de Shakespeare, Porcia tenía tres cofres, dentro
+de uno de los cuales estaba el retrato de Porcia. El pretendiente tenía que
+elegir uno de los cofres y si tenía suerte (o inteligencia) eligiría el que
+tenía el retrato, pudiendo así pedir a Porcia por esposa. En la tapa de cada
+cofre había una inscripción para ayudar al pretendiente a elegir sabiamente:
 
 > Cofre 1: El retrato no está en este cofre.
 
@@ -360,8 +368,8 @@ for l1 in alfabeto:
 
 > Cofre 3: EL retrato no está en el cofre 1.
 
-> Porcia explicó al pretendiente que de los tres enunciados, a lo sumo uno era
-> verdad.
+Porcia explicó al pretendiente que de los tres enunciados, a lo sumo uno era
+verdad.
 
 ### Python
 
@@ -382,15 +390,15 @@ for retrato in range(1, 3 + 1):
 
 ## Problema de Monty Hall
 
-> El concursante debe elegir una puerta entre tres (todas cerradas); el premio
-> consiste en llevarse lo que se encuentra detrás de la elegida. Se sabe con
-> certeza que tras una de ellas se oculta un automóvil, y tras las otras dos
-> hay cabras. Una vez que el concursante haya elegido una puerta y comunicado
-> su elección a los presentes, el presentador, que sabe lo que hay detrás de
-> cada puerta, abrirá una de las otras dos en la que haya una cabra. A
-> continuación, le da la opción al concursante de cambiar, si lo desea, de
-> puerta (tiene dos opciones). ¿Debe el concursante mantener su elección
-> original o escoger la otra puerta?
+El concursante debe elegir una puerta entre tres (todas cerradas); el premio
+consiste en llevarse lo que se encuentra detrás de la elegida. Se sabe con
+certeza que tras una de ellas se oculta un automóvil, y tras las otras dos hay
+cabras. Una vez que el concursante haya elegido una puerta y comunicado su
+elección a los presentes, el presentador, que sabe lo que hay detrás de cada
+puerta, abrirá una de las otras dos en la que haya una cabra. A continuación,
+le da la opción al concursante de cambiar, si lo desea, de puerta (tiene dos
+opciones). ¿Debe el concursante mantener su elección original o escoger la otra
+puerta?
 
 ### Python
 
@@ -412,6 +420,30 @@ print(f"Se ganaron {sincambio} autos cambiando de desicion.")
 ```
 
 ## Mafia de Cuba
+
+La habana, 29 de diciembre de 1955. Tras una comida organizada para sus
+"fieles" secuaces, Don Alessandro comienza a hablar de los "negocios" en
+progreso, cuando suena el teléfono de la habitación trasera del restaurante:
+el padrino ha sido convocado a la oficina del presidente Batista, por lo que ha
+de confiar su preciosa caja de puros a sus secuaces. Pocos saben que ésta tiene
+un doble fondo y que bajo una primera capa de cigarros ¡se halla un
+compartimento repleto de diamantes!
+
+Cada jugador tendrá que coger la caja, abrirla y optar por traicionar al
+padrino y robar algún diamante o seguir siendo un leal y "honesto" mafioso, ser
+el chófer, un sicario o incluso un agente del FBI infiltrado (cogiendo la ficha
+correspondiente).
+
+Al caer la noche, el padrino recuperará la caja que ha pasado de mano en mano
+para descubrir con rabia que sus diamantes han desaparecido.  Tendrá que
+recuperar su tesoro sin dejar de castigar a los responsables, a los que
+proporcionará unos preciosos zapatos de cemento antes de tirarlos a la bahía.
+
+Tras un acalorado debate el padrino tendrá que tomar unas cuantas decisiones
+difíciles... ¿Encontrará, con la ayuda de sus fieles secuaces, todos sus
+diamantes? ¿Perderá el respeto de los suyos haciendo acusaciones en falso?
+¿Serán los ladrones más astutos que él? ¿o el FBI hará que todos terminen entre
+las rejas?
 
 ### Python
 
