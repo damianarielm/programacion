@@ -242,6 +242,16 @@ print(f"El texto cifrado es: {cifrado}.")
 
 ## Pretense
 
+It's board game night! Players are dealt roles and have the entire night to
+complete their secret objective. By the end of the night, the truth will come
+out.
+
+*Pretense* is a game night social metagame, essentially a game that you play
+DURING other games. You have a secret role and a secret objective, and if you
+accomplish it, you gain a point AND you steal someone's role. With that role
+you can try to gain more points and more roles. The game plays from 2-12 and is
+great on a good-sized game night with about 5-6 people.
+
 ### Python
 
 ```python
@@ -554,13 +564,13 @@ print(f"Gana el jugador {turno + 1}.")
 
 ## Nim
 
-> The Nimatron is a computer that allows one to play the game Nim. It was
-> first presented in April 1940 at the 1939 New York World's Fair purely as a
-> form of entertainment. Designed in the winter of 1939 by Edward Condon for
-> the sole purpose of entertaining, it is a digital computer composed of
-> electromechanical relays which allows the lighting of four lines of seven
-> bulbs. Each player can turn off one or more of them in any line, then the
-> machine takes a turn, and so on. The last to extinguish a light is the winner.
+The Nimatron is a computer that allows one to play the game Nim. It was first
+presented in April 1940 at the 1939 New York World's Fair purely as a form of
+entertainment. Designed in the winter of 1939 by Edward Condon for the sole
+purpose of entertaining, it is a digital computer composed of electromechanical
+relays which allows the lighting of four lines of seven bulbs. Each player can
+turn off one or more of them in any line, then the machine takes a turn, and so
+on. The last to extinguish a light is the winner.
 
 ### Python
 
