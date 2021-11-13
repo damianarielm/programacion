@@ -1,5 +1,142 @@
 [[_TOC_]]
 
+## Cantidad de vocales
+
+### Python
+
+```python
+texto = input("Ingrese un texto: ")
+
+vocales = 0
+for letra in texto:
+    if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+        vocales += 1
+
+print(f"La cantidad de vocales es: {vocales}.")
+```
+
+```python
+texto = input("Ingrese un texto: ")
+
+vocales = 0
+for letra in texto:
+    if letra in "aeiou":
+        vocales += 1
+
+print(f"La cantidad de vocales es: {vocales}.")
+```
+
+```python
+texto = input("Ingrese un texto: ")
+
+vocales  = texto.count("a")
+vocales += texto.count("e")
+vocales += texto.count("i")
+vocales += texto.count("o")
+vocales += texto.count("u")
+
+print(f"La cantidad de vocales es: {vocales}.")
+```
+
+## Codigo Morse
+
+En 1837, Samuel Morse y Alfred Vail estaban trabajando en un sistema de
+telégrafo eléctrico. Decidieron usar un método por el cual cada símbolo era
+transmitido de forma individual como una combinación de rayas y puntos, es
+decir, señales telegráficas que se diferencian en el tiempo de duración de la
+señal activa. Morse desarrolló una primera versión de su código en 1837 para
+enviar números, que luego se debían convertir en mensajes completos usando un
+libro de claves. Este código fue expandido por Vail en 1841 para incluir
+letras y otros signos de puntuación, creando así el código actual. Morse
+reconoció la idoneidad de este sistema y lo patentó junto con el telégrafo
+eléctrico. Fue conocido como American Morse Code y utilizado en la primera
+transmisión por telégrafo.
+
+```python
+texto = input("Ingrese texto: ")
+codigo = ""
+
+for letra in texto:
+    if letra == "a": codigo += ".- "
+    elif letra == "b": codigo += "-... "
+    elif letra == "c": codigo += "-.-. "
+    elif letra == "d": codigo += "-.. "
+    elif letra == "e": codigo += ". "
+    elif letra == "f": codigo += "..-. "
+    elif letra == "g": codigo += "--. "
+    elif letra == "h": codigo += ".... "
+    elif letra == "i": codigo += ".. "
+    elif letra == "j": codigo += ".--- "
+    elif letra == "k": codigo += "-.- "
+    elif letra == "l": codigo += ".-.. "
+    elif letra == "m": codigo += "-- "
+    elif letra == "n": codigo += "-. "
+    elif letra == "o": codigo += "--- "
+    elif letra == "p": codigo += ".--. "
+    elif letra == "q": codigo += "--.- "
+    elif letra == "r": codigo += ".-. "
+    elif letra == "s": codigo += "... "
+    elif letra == "t": codigo += "- "
+    elif letra == "u": codigo += "..- "
+    elif letra == "v": codigo += "...- "
+    elif letra == "w": codigo += ".-- "
+    elif letra == "x": codigo += "-..- "
+    elif letra == "y": codigo += "-.-- "
+    elif letra == "z": codigo += "--.. "
+    else: codigo += letra
+
+print(f"El cifrado es: {codigo}")
+```
+
+```python
+texto = input("Ingrese texto: ")
+
+texto = texto.replace("a", ".- ")
+texto = texto.replace("b", "-... ")
+texto = texto.replace("c", "-.-. ")
+texto = texto.replace("d", "-.. ")
+texto = texto.replace("e", ". ")
+texto = texto.replace("f", "..-. ")
+texto = texto.replace("g", "--. ")
+texto = texto.replace("h", ".... ")
+texto = texto.replace("i", ".. ")
+texto = texto.replace("j", ".--- ")
+texto = texto.replace("k", "-.- ")
+texto = texto.replace("l", ".-.. ")
+texto = texto.replace("m", "-- ")
+texto = texto.replace("n", "-. ")
+texto = texto.replace("o", "--- ")
+texto = texto.replace("p", ".--. ")
+texto = texto.replace("q", "--.- ")
+texto = texto.replace("r", ".-. ")
+texto = texto.replace("s", "... ")
+texto = texto.replace("t", "- ")
+texto = texto.replace("u", "..- ")
+texto = texto.replace("v", "...- ")
+texto = texto.replace("w", ".-- ")
+texto = texto.replace("x", "-..- ")
+texto = texto.replace("y", "-.-- ")
+texto = texto.replace("z", "--.. ")
+
+print(f"El cifrado es: {texto}")
+```
+
+## Fuerza bruta
+
+En criptografía, se denomina ataque de fuerza bruta a la forma de recuperar una
+clave probando todas las combinaciones posibles hasta encontrar aquella que
+permite el acceso.
+
+```python
+alfabeto = "abcdefghijklmnopqrstuvwxyz"
+
+for l1 in alfabeto:
+    for l2 in alfabeto:
+        for l3 in alfabeto:
+            for l4 in alfabeto:
+                print(l1 + l2 + l3 + l4)
+```
+
 ## Busqueda lineal
 
 En informática, la búsqueda lineal o la búsqueda secuencial es un método para

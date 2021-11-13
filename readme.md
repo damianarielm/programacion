@@ -33,10 +33,8 @@
 
 * Numeros naturales
 * Factores
-* Codigo Morse
 * Binario a decimal
 * Fizzbuzz
-* Cantidad de vocales
 * Sumatoria de naturales
 * Factorial
 * Trigo y Ajedrez
@@ -45,7 +43,6 @@
 * Calculo de pi
 * Calculo de e
 * Numeros palindromos
-* Fuerza bruta
 * Los cofres de Porcia
 * Problema de Monty Hall
 * Mafia de Cuba
@@ -66,6 +63,9 @@
 
 # [Arreglos](arreglos)
 
+* Cantidad de vocales
+* Codigo Morse
+* Fuerza bruta
 * Busqueda lineal
 * Cadena reversa
 * Cifrado Cesar
