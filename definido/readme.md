@@ -123,6 +123,12 @@ for i, digito in enumerate(n):
 print(f"El numero en decimal es: {decimal}.")
 ```
 
+```python
+n = input("Ingrese un numero en binario: ")
+
+print(f"El numero en decimal es: {int(n, 2)}.")
+```
+
 ## Fizzbuzz
 
 Fizz buzz is a group word game for children to teach them about division.
