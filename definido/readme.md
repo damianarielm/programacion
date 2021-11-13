@@ -220,6 +220,13 @@ suma = (primero + ultimo) * (ultimo - primero + 1) / 2
 print(f"La suma es: {suma}.")
 ```
 
+```python
+primero = int(input("Ingrese el primer numero: "))
+ultimo = int(input("Ingrese el ultimo numero: "))
+
+print(f"La suma es: {sum(range(primero, ultimo + 1))}.")
+```
+
 ## Factorial
 
 El factorial de un entero positivo n, el factorial de n o n factorial se define
