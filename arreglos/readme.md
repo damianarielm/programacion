@@ -52,6 +52,8 @@ reconoció la idoneidad de este sistema y lo patentó junto con el telégrafo
 eléctrico. Fue conocido como American Morse Code y utilizado en la primera
 transmisión por telégrafo.
 
+### Python
+
 ```python
 texto = input("Ingrese texto: ")
 codigo = ""
@@ -126,6 +128,8 @@ print(f"El cifrado es: {texto}")
 En criptografía, se denomina ataque de fuerza bruta a la forma de recuperar una
 clave probando todas las combinaciones posibles hasta encontrar aquella que
 permite el acceso.
+
+### Python
 
 ```python
 alfabeto = "abcdefghijklmnopqrstuvwxyz"
