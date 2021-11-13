@@ -73,9 +73,9 @@ print(f"La cadena reversa es: {texto[::-1]}.")
 
 ## Cifrado Cesar
 
-> El cifrado César recibe su nombre en honor a Julio César, que, según
-> Suetonio, lo usó con un desplazamiento de tres espacios para proteger sus
-> mensajes importantes de contenido militar:
+El cifrado César recibe su nombre en honor a Julio César, que, según Suetonio,
+lo usó con un desplazamiento de tres espacios para proteger sus mensajes
+importantes de contenido militar:
 
 > "Si tenía que decir algo confidencial, lo escribía usando el cifrado, esto
 > es, cambiando el orden de las letras del alfabeto, para que ni una palabra
@@ -294,6 +294,13 @@ print(f"Lista ordenada: {lista}.")
 
 ## Ta-Te-Ti
 
+El tres en línea, es un juego de lápiz y papel entre dos jugadores: O y X, que
+marcan los espacios de un tablero de 3×3 alternadamente.
+
+Cada jugador solo debe colocar su símbolo una vez por turno y no debe ser sobre
+una casilla ya jugada. En caso de que el jugador haga trampa el ganador será el
+otro. Se debe conseguir realizar una línea recta o diagonal por símbolo.
+
 ### Python
 
 ```python
@@ -472,6 +479,11 @@ print("Ganaste!")
 ```
 
 ## Ahorcado
+
+El ahorcado (también llamado colgado) es un juego de adivinanzas de lápiz y
+papel para dos o más jugadores. Un jugador piensa en una palabra, frase u
+oración y el otro trata de adivinarla según lo que sugiere por letras o dentro
+de un cierto número de oportunidades.
 
 ### Python
 
