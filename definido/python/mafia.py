@@ -18,7 +18,7 @@ if opcion == 2: leales -= 1
 if opcion == 3: agentes -= 1
 if opcion == 4: choferes -= 1
 
-for i in range(1, jugadores):
+for i in range(2, jugadores + 1):
     for _ in range(99): print("")
     if diamantes: print(f"Diamantes: {diamantes}.")
     if leales: print(f"Leales: {leales}.")
@@ -31,7 +31,7 @@ for i in range(1, jugadores):
     if agentes: print("3 - Elegir rol agente.")
     if choferes: print("4 - Elegir rol chofer.")
 
-    opcion = int(input(f"Jugador {i + 1}, elija una opcion: "))
+    opcion = int(input(f"Jugador {i}, elija una opcion: "))
 
     if opcion == 1: diamantes -= int(input("Ingrese cantidad de diamantes: "))
     if opcion == 2: leales -= 1
