@@ -135,7 +135,7 @@ Elementos.
 ra = int(input("Ingrese un numero: "))
 rb = int(input("Ingrese otro numero: "))
 
-while ra % rb != 0:
+while ra%rb != 0:
     ra, rb = rb, ra % rb
 
 print(f"El MCD es: {rb}.")
@@ -171,14 +171,14 @@ print(f"Resultado: {resultado}.")
 from random import randint
 
 incognita = randint(1, 100)
-pregunta = -1
+intento = -1
 
-while incognita != pregunta:
-    pregunta = int(input("Ingrese un numero: "))
+while incognita != intento:
+    intento = int(input("Ingrese un numero: "))
 
-    if incognita > pregunta:
+    if incognita > intento:
         print("El numero es mas grande.")
-    elif incognita < pregunta:
+    elif incognita < intento:
         print("El numero es mas chico.")
 
 print("Correcto!")
@@ -207,10 +207,10 @@ while simon == jugador:
     simon += str(randint(1, 4))
 
     for letra in simon:
-        for i in range(100): print("")
+        for _ in range(100): print("")
         print(letra)
         sleep(0.5)
-        for i in range(100): print("")
+        for _ in range(100): print("")
         sleep(0.5)
 
 
@@ -227,13 +227,13 @@ print(f"Perdiste! La secuencia era: {simon}.")
 from random import randint
 
 incognita = str(randint(1000, 10000))
-pregunta = ""
+intento = ""
 
-while pregunta != incognita:
-    pregunta = input("Ingrese un numero de cuatro cifras: ")
+while intento != incognita:
+    intento = input("Ingrese un numero de cuatro cifras: ")
 
     toros = vacas = 0
-    for p, i in zip(pregunta, incognita):
+    for p, i in zip(intento, incognita):
         if p == i:
             toros += 1
         elif p in incognita:

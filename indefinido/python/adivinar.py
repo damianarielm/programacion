@@ -1,14 +1,14 @@
 from random import randint
 
 incognita = randint(1, 100)
-pregunta = -1
+intento = -1
 
-while incognita != pregunta:
-    pregunta = int(input("Ingrese un numero: "))
+while incognita != intento:
+    intento = int(input("Ingrese un numero: "))
 
-    if incognita > pregunta:
+    if incognita > intento:
         print("El numero es mas grande.")
-    elif incognita < pregunta:
+    elif incognita < intento:
         print("El numero es mas chico.")
 
 print("Correcto!")

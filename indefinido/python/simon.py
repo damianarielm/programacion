@@ -7,10 +7,10 @@ while simon == jugador:
     simon += str(randint(1, 4))
 
     for letra in simon:
-        for i in range(100): print("")
+        for _ in range(100): print("")
         print(letra)
         sleep(0.5)
-        for i in range(100): print("")
+        for _ in range(100): print("")
         sleep(0.5)
 
 

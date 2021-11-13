@@ -1,13 +1,13 @@
 from random import randint
 
 incognita = str(randint(1000, 10000))
-pregunta = ""
+intento = ""
 
-while pregunta != incognita:
-    pregunta = input("Ingrese un numero de cuatro cifras: ")
+while intento != incognita:
+    intento = input("Ingrese un numero de cuatro cifras: ")
 
     toros = vacas = 0
-    for p, i in zip(pregunta, incognita):
+    for p, i in zip(intento, incognita):
         if p == i:
             toros += 1
         elif p in incognita:
