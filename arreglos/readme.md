@@ -672,27 +672,19 @@ palos = "♥♤♢♧"
 rojos = "♥♢"
 coincidencias = 0
 
-mazo = []
-for valor in valores:
-    for palo in palos:
-        mazo += [valor + palo]
+mazo = [ valor + palo for valor in valores for palo in palos ]
 shuffle(mazo)
 
 matriz = []
 for i in range(len(palos)):
     matriz += [ mazo[len(valores) * i:len(valores) * (i+1)] ]
 
-juego = []
-for _ in palos:
-    juego += [[dorso] * len(valores)]
+juego = [ [dorso] * len(valores) for _ in palos ]
 
 while coincidencias < len(mazo) / 2:
-    print("  1   2   3   4   5   6   7   8   9   10  11  12  13")
+    print("   1   2   3   4   5   6   7   8   9   10  11  12  13")
     for i, fila in enumerate(juego):
-        print(f"{i + 1}", end = "")
-        for elemento in fila:
-            print(f" {elemento} ", end = "")
-        print("\n")
+        print(i + 1, *fila, sep = "  ", end = "\n\n")
 
     fila1 = int(input("Ingrese una fila: ")) - 1
     columna1 = int(input("Ingrese una columna: ")) - 1
