@@ -44,6 +44,7 @@
 * Calculo de pi
 * Calculo de e
 * Numeros palindromos
+* Fichas de domino
 * Los cofres de Porcia
 * Problema de Monty Hall
 * Mafia de Cuba

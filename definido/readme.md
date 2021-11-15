@@ -280,6 +280,29 @@ for n1 in range(1, 10):
             print(f"{n1}{n2}{n3}{n2}{n1}")
 ```
 
+## Fichas de domino
+
+El dominó es un juego de mesa en el que se juegan y emplean unas fichas
+(baldosas) rectangulares, generalmente blancas por la cara y negras por el
+revés, usualmente hay de diferentes colores, aunque existen muchas variantes.
+Una de sus caras está dividida por dos cuadrados, cada uno de los cuales está
+numerado normalmente mediante disposiciones de puntos como los dados.
+
+### Python
+
+```python
+for n1 in range(7):
+    for n2 in range(7):
+        if n2 >= n1:
+            print(f"[{n1}|{n2}]")
+```
+
+```python
+for n1 in range(7):
+    for n2 in range(n1, 7):
+        print(f"[{n1}|{n2}]")
+```
+
 ## Los cofres de Porcia
 
 En *El mercader de Venecia*, de Shakespeare, Porcia tenía tres cofres, dentro
