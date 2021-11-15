@@ -4,6 +4,7 @@
 
 * Constantes importantes
 * Operadores aritmeticos
+* Sorteo
 * Calculo de e
 * Calculo de promedio
 * Calculo de minutos y segundos

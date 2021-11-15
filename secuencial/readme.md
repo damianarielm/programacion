@@ -64,6 +64,20 @@ print(f"La division entera es {n1 // n2}.")
 print(f"La potencia es {n1 ** n2}.")
 ```
 
+## Sorteo
+
+### Python
+
+```python
+from random import randint
+
+minimo = int(input("Ingrese el valor minimo: "))
+maximo = int(input("Ingrese el valor maximo: "))
+sorteo = randint(minimo, maximo)
+
+print(f"El numero sorteado fue: {sorteo}.")
+```
+
 ## Calculo de e
 
 El número *e*, conocido en ocasiones como número de Euler o constante de
