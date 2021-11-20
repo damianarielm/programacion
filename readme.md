@@ -166,3 +166,4 @@
 * Horrified
 * Go
 * Santorini
+* King of Tokyo
