@@ -20,6 +20,7 @@
 * Valor absoluto
 * Paridad
 * Signo
+* Piedra, papel o tijera
 * Arboles de decision
 * Chequeo de vocales
 * Ordenar numeros

@@ -87,6 +87,87 @@ else: signo = "negativo"
 print("El numero es {signo}.")
 ```
 
+## Piedra, papel o tijera
+
+Piedra, papel o tijera(s) es un juego infantil, un juego de manos en el que
+existen tres elementos: la piedra que vence a la tijera rompiéndola, la tijera
+que vence al papel cortándolo y el papel que vence a la piedra envolviéndola,
+dando lugar a un círculo o ciclo cerrado, que caracteriza al juego. Se utiliza
+con mucha frecuencia para decidir quién de dos personas hará algo, tal y como
+se hace a veces usando una moneda, o para dirimir algún asunto.
+
+### Python
+
+```python
+from random import randint
+
+print("1 - Piedra.")
+print("2 - Papel.")
+print("3 - Tijera.")
+jugador = int(input("Elija una opcion: "))
+
+computadora = randint(1, 3)
+print(f"Computadora elige: {computadora}.\n")
+
+if computadora == jugador:
+    print("Empate.")
+elif computadora == 1:
+    if jugador == 2:
+        print("Ganaste!")
+    else:
+        print("Perdiste.")
+elif computadora == 2:
+    if jugador == 3:
+        print("Ganaste!")
+    else:
+        print("Perdiste.")
+else:
+    if jugador == 1:
+        print("Ganaste!")
+    else:
+        print("Perdiste.")
+```
+
+```python
+from random import randint
+
+print("1 - Piedra.")
+print("2 - Papel.")
+print("3 - Tijera.")
+jugador = int(input("Elija una opcion: "))
+
+computadora = randint(1, 3)
+print(f"Computadora elige: {computadora}.\n")
+
+if computadora == jugador:
+    print("Empate.")
+elif computadora == 1:
+    print("Ganaste!" if jugador == 2 else "Perdiste.")
+elif computadora == 2:
+    print("Ganaste!" if jugador == 3 else "Perdiste.")
+else:
+    print("Ganaste!" if jugador == 1 else "Perdiste.")
+```
+
+```python
+from random import randint
+
+print("1 - Piedra.")
+print("2 - Papel.")
+print("3 - Tijera.")
+jugador = int(input("Elija una opcion: "))
+
+computadora = randint(1, 3)
+print(f"Computadora elige: {computadora}.\n")
+
+if computadora == jugador:
+    print("Empate.")
+elif abs(jugador - computadora) == 1:
+    print("Ganaste!" if jugador > computadora else "Perdiste.")
+else:
+    print("Ganaste!" if jugador < computadora else "Perdiste.")
+```
+
 ## Arboles de decision
 
 Un árbol de decisión es un modelo de predicción utilizado en diversos ámbitos
