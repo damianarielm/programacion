@@ -91,6 +91,8 @@
 * Factorial
 * Sucesion de Fibonacci
 * Algoritmo del Campesino Ruso
+* Quick Sort
+* Merge Sort
 * Torres de Hanoi
 
 # [Punteros](punteros)
