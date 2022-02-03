@@ -74,6 +74,7 @@
 * Cifrado Cesar
 * Pretense
 * Spyfall
+* Verificacion de Sudoku
 * Busqueda binaria
 * Ordenamiento de burbuja
 * Ordenamiento por insercion
