@@ -311,11 +311,11 @@ elegir uno de los cofres y si tenía suerte (o inteligencia) eligiría el que
 tenía el retrato, pudiendo así pedir a Porcia por esposa. En la tapa de cada
 cofre había una inscripción para ayudar al pretendiente a elegir sabiamente:
 
-> Cofre 1: El retrato no está en este cofre.
+> Cofre 1: El retrato está en este cofre.
 
 > Cofre 2: El retrato no está aquí.
 
-> Cofre 3: EL retrato no está en el cofre 1.
+> Cofre 3: El retrato no está en el cofre 1.
 
 Porcia explicó al pretendiente que de los tres enunciados, a lo sumo uno era
 verdad.
