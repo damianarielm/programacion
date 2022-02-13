@@ -25,7 +25,7 @@ for i, j in zip(range(0, 3, 3), range(0, 3, 3)):
         cuadrado.append(tablero[i + di][j + dj])
 
     if len(cuadrado) != len(set(cuadrado)) or 0 in cuadrado:
-        print(f"Error en el cuadrado {i + di + 1}, {j + dj + 1}")
+        print(f"Error en el cuadrado {i + 1}, {j + 1}")
         exit(3)
 
 print("Valido.")
