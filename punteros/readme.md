@@ -2,6 +2,56 @@
 
 ## strlen
 
+### C
+
+```c
+#include <stdio.h>
+
+int len(char* str) {
+    int len = 0;
+    while(str[len]) len++;
+    return len;
+}
+
+void main() {
+    char str[100] = "testing";
+    printf("len(\"\") == %d.\n", len(""));
+    printf("len(\"%s\") == %d.\n", str, len(str));
+}
+```
+
+```c
+#include <stdio.h>
+
+int len(char* str) {
+    int len = 0;
+    while(*str++) len++;
+    return len;
+}
+
+void main() {
+    char str[100] = "testing";
+    printf("len(\"\") == %d.\n", len(""));
+    printf("len(\"%s\") == %d.\n", str, len(str));
+}
+```
+
+```c
+#include <stdio.h>
+
+int len(char* str) {
+    char* end = str;
+    while(*end++);
+    return end - str - 1;
+}
+
+void main() {
+    char str[100] = "testing";
+    printf("len(\"\") == %d.\n", len(""));
+    printf("len(\"%s\") == %d.\n", str, len(str));
+}
+```
+
 ## strcpy
 
 ## realloc
