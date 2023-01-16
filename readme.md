@@ -86,6 +86,7 @@
 * Ahorcado
 * Memoria
 * Quarto
+* Snake
 
 # [Recursion](recursion)
 
