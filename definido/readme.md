@@ -127,6 +127,15 @@ for i in range(2, n + 1):
 print(f"El factorial es: {factorial}.")
 ```
 
+```python
+n = int(input("Ingrese un numero: "))
+
+for i in range(n - 1, 0, -1):
+    n *= i
+
+print(f"El factorial es: {n}.")
+```
+
 ## Trigo y Ajedrez
 
 Al noroeste de la India (seguramente en el actual Pakistán o Afganistán), había
