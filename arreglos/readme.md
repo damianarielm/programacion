@@ -818,3 +818,53 @@ while not ganador:
 mostrarTablero(tablero)
 print(f"Jugador {ganador} ha ganado!")
 ```
+
+## Snake
+
+El Snake (a veces también llamado serpiente) es un videojuego lanzado a
+mediados de la década de 1970 que ha mantenido su popularidad desde entonces,
+convirtiéndose en un clásico.
+
+En el juego, el jugador o usuario controla una larga y delgada criatura,
+semejante a una serpiente, que vaga alrededor de un plano delimitado,
+recogiendo alimentos (o algún otro elemento), tratando de evitar golpearse
+contra su propia cola o las "paredes" que rodean el área de juego. Cada vez que
+la serpiente se come un pedazo de comida, la cola crece más, provocando que
+aumente la dificultad del juego. El usuario controla la dirección de la cabeza
+de la serpiente (arriba, abajo, izquierda o derecha) y el cuerpo de la serpiente
+la sigue. Además, el jugador no puede detener el movimiento de la serpiente,
+mientras que el juego está en marcha.
+
+### Python
+
+```python
+from random import randint
+import curses
+
+win = curses.initscr()
+h, w = win.getmaxyx()
+win.keypad(True), win.timeout(100), curses.curs_set(0)
+
+x, y = food = w // 2, h // 2
+snake = [(x - 2, y), (x - 1, y), (x, y)]
+key = curses.KEY_RIGHT
+
+while 0 < x < w - 1 and 0 < y < h - 1 and snake[0] not in snake[1:]:
+    if (x, y) == food:
+        food = randint(1, w - 2), randint(1, h - 2)
+        win.addch(food[1], food[0], "*")
+    else:
+        last = snake.pop(0)
+        win.addch(last[1], last[0], " ")
+
+    new_key = win.getch()
+    key = key if new_key == -1 else new_key
+
+    if key == curses.KEY_RIGHT: x += 1
+    if key == curses.KEY_LEFT:  x -= 1
+    if key == curses.KEY_DOWN:  y += 1
+    if key == curses.KEY_UP:    y -= 1
+
+    snake.append((x, y))
+    win.addch(y, x, "#")
+```
