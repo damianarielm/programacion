@@ -4,6 +4,7 @@
 
 * Constantes importantes
 * Operadores aritmeticos
+* Tabla de verdad
 * Sorteo
 * Calculo de e
 * Calculo de promedio

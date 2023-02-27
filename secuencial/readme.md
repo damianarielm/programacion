@@ -64,6 +64,38 @@ print(f"La division entera es {n1 // n2}.")
 print(f"La potencia es {n1 ** n2}.")
 ```
 
+## Tabla de verdad
+
+Una *tabla de verdad*, o *tabla de valores de verdades*, es una tabla que
+muestra el valor de verdad de una proposición compuesta, para cada combinación
+de verdad que se pueda asignar.
+
+### Python
+
+```python
+print("La tabla de verdad de la negacion es:")
+print(f"{not False = }")
+print(f"{not True = }")
+
+print("\nLa tabla de verdad de la conjuncion es:")
+print(f"{False and False = }")
+print(f"{False and True = }")
+print(f"{True and False = }")
+print(f"{True and True = }")
+
+print("\nLa tabla de verdad de la disyuncion es:")
+print(f"{False or False = }")
+print(f"{False or True = }")
+print(f"{True or False = }")
+print(f"{True or True = }")
+
+print("\nLa tabla de verdad de la disyuncion exclusiva es:")
+print(f"{False ^ False = }")
+print(f"{False ^ True = }")
+print(f"{True ^ False = }")
+print(f"{True ^ True = }")
+```
+
 ## Sorteo
 
 ### Python

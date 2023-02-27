@@ -1,0 +1,21 @@
+print("La tabla de verdad de la negacion es:")
+print(f"{not False = }")
+print(f"{not True = }")
+
+print("\nLa tabla de verdad de la conjuncion es:")
+print(f"{False and False = }")
+print(f"{False and True = }")
+print(f"{True and False = }")
+print(f"{True and True = }")
+
+print("\nLa tabla de verdad de la disyuncion es:")
+print(f"{False or False = }")
+print(f"{False or True = }")
+print(f"{True or False = }")
+print(f"{True or True = }")
+
+print("\nLa tabla de verdad de la disyuncion exclusiva es:")
+print(f"{False ^ False = }")
+print(f"{False ^ True = }")
+print(f"{True ^ False = }")
+print(f"{True ^ True = }")
