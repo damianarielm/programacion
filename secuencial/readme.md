@@ -133,6 +133,11 @@ print(f"El numero e es aproximadamente: {e}.")
 
 ## Calculo de promedio
 
+En matemáticas y estadística, una *media* o *promedio* es una medida de
+tendencia central. Resulta al efectuar una serie determinada de operaciones
+con un conjunto de números y que, en determinadas condiciones, puede
+representar por sí solo a todo el conjunto.
+
 ### Python
 
 ```python
