@@ -122,14 +122,16 @@ necesiten más intercambios, lo cual significa que la lista está ordenada.
 ### Python
 
 ```python
-lista = [200 ,190, 1200, 1, 2, 4, 55, 1000, 6, 800]
+from permutacion import permutacion
 
+cantidad = int(input("Ingrese la cantidad: "))
+lista = permutacion(cantidad)
 print(f"Lista desordenada: {lista}.")
 
-for i in range(len(lista)):
-    for j in range(len(lista) - 1):
-        if lista[j] > lista[j + 1]:
-            lista[j], lista[j + 1] = lista[j + 1], lista[j]
+for _ in range(len(lista)):
+    for i in range(len(lista) - 1):
+        if lista[i] > lista[i + 1]:
+            lista[i], lista[i + 1] = lista[i + 1], lista[i]
 
 print(f"Lista ordenada: {lista}.")
 ```
