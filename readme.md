@@ -89,6 +89,7 @@
 
 # [Recursion](recursion)
 
+* Sumatoria de naturales
 * Factorial
 * Sucesion de Fibonacci
 * Algoritmo del Campesino Ruso
