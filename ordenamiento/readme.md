@@ -1,5 +1,32 @@
 [[_TOC_]]
 
+## Generar permutacion
+
+### Python
+
+```python
+from random import shuffle
+
+def permutacion(cantidad):
+    lista = list(range(cantidad))
+    shuffle(lista)
+    return lista
+
+cantidad = int(input("Ingrese la cantidad: "))
+print(permutacion(cantidad))
+```
+
+## Verificar ordenamiento
+
+```python
+def verificar(lista):
+    for i in range(len(lista) - 1):
+        if lista[i] > lista[i + 1]:
+            return False
+
+    return True
+```
+
 ## Ordenamiento de burbuja
 
 La Ordenación de burbuja (Bubble Sort en inglés) es un sencillo algoritmo de

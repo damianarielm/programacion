@@ -98,6 +98,8 @@
 
 # [Ordenamiento](ordenamiento)
 
+* Generar permutacion
+* Verificar ordenamietno
 * Ordenamiento de burbuja
 * Ordenamiento por insercion
 * Quick Sort
