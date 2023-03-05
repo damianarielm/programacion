@@ -230,6 +230,15 @@ distancia = ((x2 - x1)**2 + (y2 - y1)**2) ** 0.5
 print(f"La distancia es: {distancia}.")
 ```
 
+```python
+from math import dist
+
+p = int(input("Ingrese x1: ")), int(input("Ingrese y1: "))
+q = int(input("Ingrese x2: ")), int(input("Ingrese y2: "))
+
+print(f"La distancia es: {dist(p, q)}.")
+```
+
 ## Raices y vertice de una parabola
 
 ### Python
