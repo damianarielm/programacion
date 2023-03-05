@@ -105,6 +105,7 @@
 * Menor indice
 * Ordenamiento por seleccion
 * Ordenamiento de burbuja
+* Insertar en orden
 * Ordenamiento por insercion
 * Quick Sort
 * Merge Sort
