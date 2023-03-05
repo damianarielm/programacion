@@ -234,16 +234,15 @@ punto se inserta el elemento *k+1* debiendo desplazarse los demás elementos.
 ### Python
 
 ```python
-lista = [200 ,190, 1200, 1, 2, 4, 55, 1000, 6, 800]
+from permutacion import permutacion # Ejercicio previo
+from insertar2 import insertar_en_orden # Ejercicio previo
 
+cantidad = int(input("Ingrese la cantidad: "))
+lista = permutacion(cantidad)
 print(f"Lista desordenada: {lista}.")
 
-for i, n in enumerate(lista):
-    while i > 0 and lista[i - 1] > n:
-        lista[i] = lista[i - 1]
-        i -= 1
-
-    lista[i] = n
+for i in range(len(lista)):
+    lista = insertar_en_orden(lista[:i], lista[i]) + lista[i + 1:]
 
 print(f"Lista ordenada: {lista}.")
 ```
