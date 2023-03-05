@@ -103,6 +103,7 @@
 * Bogo Sort
 * Permutation Sort
 * Menor indice
+* Ordenamiento por seleccion
 * Ordenamiento de burbuja
 * Ordenamiento por insercion
 * Quick Sort
