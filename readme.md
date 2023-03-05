@@ -62,7 +62,6 @@
 * Algoritmo de Euclides
 * Calculadora
 * Adivinar un numero
-* Simon
 * Toros y Vacas
 
 # [Arreglos](arreglos)
@@ -73,6 +72,7 @@
 * Busqueda lineal
 * Cadena reversa
 * Cifrado Cesar
+* Simon
 * Pretense
 * Spyfall
 * Verificacion de Sudoku
