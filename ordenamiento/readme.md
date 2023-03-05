@@ -12,8 +12,9 @@ def permutacion(cantidad):
     shuffle(lista)
     return lista
 
-cantidad = int(input("Ingrese la cantidad: "))
-print(permutacion(cantidad))
+if __name__ == "__main__":
+    cantidad = int(input("Ingrese la cantidad: "))
+    print(permutacion(cantidad))
 ```
 
 ## Verificar ordenamiento
