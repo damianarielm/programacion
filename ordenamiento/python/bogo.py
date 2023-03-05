@@ -1,13 +1,12 @@
 from random import shuffle
 from permutacion import permutacion # Ejercicio previo
-from verificar import verificar # Ejercicio previo
-
-def bogosort(lista):
-    while not verificar(lista):
-        shuffle(lista)
+from verificar import esta_ordenada # Ejercicio previo
 
 cantidad = int(input("Ingrese la cantidad: "))
 lista = permutacion(cantidad)
 print(f"Lista desordenada: {lista}.")
-bogosort(lista)
+
+while not esta_ordenada(lista):
+    shuffle(lista)
+
 print(f"Lista ordenada: {lista}.")
