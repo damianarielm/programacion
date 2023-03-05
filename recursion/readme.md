@@ -52,66 +52,6 @@ n2 = int(input("Ingrese otro numero: "))
 print(f"El producto es: {ruso(n1, n2)}.")
 ```
 
-## Quick Sort
-
-El ordenamiento rápido (quicksort en inglés) es un algoritmo de ordenacion
-creado por el científico británico en computación C. A. R. Hoare.
-
-### Python
-
-```python
-lista = [200, 190, 1200, 1, 2, 4, 55, 1000, 6, 800]
-
-print(f"Lista desordenada: {lista}.")
-
-def ordenar(lista):
-    if len(lista) <= 1:
-        return lista
-    else:
-        pivote = lista[0]
-        menores = [ n for n in lista[1:] if n < pivote ]
-        mayores = [ n for n in lista[1:] if n >= pivote ]
-        return ordenar(menores) + [ pivote ] + ordenar(mayores)
-
-print(f"Lista ordenada: {ordenar(lista)}.")
-```
-
-## Merge Sort
-
-El algoritmo de ordenamiento por mezcla (merge sort en inglés) es un algoritmo
-de ordenamiento externo estable basado en la técnica divide y vencerás.
-
-Fue desarrollado en 1945 por John Von Neumann.
-
-### Python
-
-```python
-lista = [200, 190, 1200, 1, 2, 4, 55, 1000, 6, 800]
-
-print(f"Lista desordenada: {lista}.")
-
-def merge(lista1, lista2):
-    if not lista1:
-        return lista2
-    elif not lista2:
-        return lista1
-    elif lista1[0] < lista2[0]:
-        return [ lista1[0] ] + merge(lista1[1:], lista2)
-    else:
-        return [ lista2[0] ] + merge(lista1, lista2[1:])
-
-def ordenar(lista):
-    if len(lista) <= 1:
-        return lista
-    else:
-        mitad = len(lista) // 2
-        izquierda = lista[:mitad]
-        derecha = lista[mitad:]
-        return merge(ordenar(izquierda), ordenar(derecha))
-
-print(f"Lista ordenada: {ordenar(lista)}.")
-```
-
 ## Torres de Hanoi
 
 N. Claus de Siam vio en el gran templo de Benarés, debajo de una cúpula que

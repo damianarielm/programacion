@@ -77,8 +77,6 @@
 * Spyfall
 * Verificacion de Sudoku
 * Busqueda binaria
-* Ordenamiento de burbuja
-* Ordenamiento por insercion
 * Ta-Te-Ti
 * Juego del 15
 * Babylon
@@ -94,9 +92,14 @@
 * Factorial
 * Sucesion de Fibonacci
 * Algoritmo del Campesino Ruso
+* Torres de Hanoi
+
+# [Ordenamiento](ordenamiento)
+
+* Ordenamiento de burbuja
+* Ordenamiento por insercion
 * Quick Sort
 * Merge Sort
-* Torres de Hanoi
 
 # [Punteros](punteros)
 

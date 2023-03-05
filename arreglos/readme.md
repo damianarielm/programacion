@@ -475,60 +475,6 @@ while izquierda <= derecha:
 if derecha != -1: print("El elemento no se encuentra.")
 ```
 
-## Ordenamiento de burbuja
-
-La Ordenación de burbuja (Bubble Sort en inglés) es un sencillo algoritmo de
-ordenamiento. Funciona revisando cada elemento de la lista que va a ser
-ordenada con el siguiente, intercambiándolos de posición si están en el orden
-equivocado. Es necesario revisar varias veces toda la lista hasta que no se
-necesiten más intercambios, lo cual significa que la lista está ordenada.
-
-### Python
-
-```python
-lista = [200 ,190, 1200, 1, 2, 4, 55, 1000, 6, 800]
-
-print(f"Lista desordenada: {lista}.")
-
-for i in range(len(lista)):
-    for j in range(len(lista) - 1):
-        if lista[j] > lista[j + 1]:
-            lista[j], lista[j + 1] = lista[j + 1], lista[j]
-
-print(f"Lista ordenada: {lista}.")
-```
-
-## Ordenamiento por insercion
-
-El ordenamiento por inserción (insertion sort en inglés) es una manera muy
-natural de ordenar para un ser humano, y puede usarse fácilmente para ordenar
-un mazo de cartas numeradas en forma arbitraria.
-
-Inicialmente se tiene un solo elemento, que obviamente es un conjunto ordenado.
-Después, cuando hay *k* elementos ordenados de menor a mayor, se toma el
-elemento *k+1* y se compara con todos los elementos ya ordenados, deteniéndose
-cuando se encuentra un elemento menor (todos los elementos mayores han sido
-desplazados una posición a la derecha) o cuando ya no se encuentran elementos
-(todos los elementos fueron desplazados y este es el más pequeño). En este
-punto se inserta el elemento *k+1* debiendo desplazarse los demás elementos.
-
-### Python
-
-```python
-lista = [200 ,190, 1200, 1, 2, 4, 55, 1000, 6, 800]
-
-print(f"Lista desordenada: {lista}.")
-
-for i, n in enumerate(lista):
-    while i > 0 and lista[i - 1] > n:
-        lista[i] = lista[i - 1]
-        i -= 1
-
-    lista[i] = n
-
-print(f"Lista ordenada: {lista}.")
-```
-
 ## Ta-Te-Ti
 
 El tres en línea, es un juego de lápiz y papel entre dos jugadores: O y X, que
