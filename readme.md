@@ -92,6 +92,7 @@
 * Sumatoria de naturales
 * Factorial
 * Sucesion de Fibonacci
+* Conjetura de Collatz
 * Algoritmo del Campesino Ruso
 * Torres de Hanoi
 
