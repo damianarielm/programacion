@@ -19,6 +19,8 @@ if __name__ == "__main__":
 
 ## Verificar ordenamiento
 
+### Python
+
 ```python
 def verificar(lista):
     for i in range(len(lista) - 1):
@@ -26,6 +28,25 @@ def verificar(lista):
             return False
 
     return True
+```
+
+## Bogo Sort
+
+### Python
+
+```python
+from random import shuffle
+from permutacion import permutacion # Ejercicio previo
+
+def bogosort(lista):
+    while not verificar(lista):
+        shuffle(lista)
+
+cantidad = int(input("Ingrese la cantidad: "))
+lista = permutacion(cantidad)
+print(f"Lista desordenada: {lista}.")
+bogosort(lista)
+print(f"Lista ordenada: {lista}.")
 ```
 
 ## Ordenamiento de burbuja
