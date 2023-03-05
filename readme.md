@@ -101,6 +101,7 @@
 * Generar permutacion
 * Verificar ordenamietno
 * Bogo Sort
+* Permutacion Sort
 * Ordenamiento de burbuja
 * Ordenamiento por insercion
 * Quick Sort
