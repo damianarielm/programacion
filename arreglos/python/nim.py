@@ -5,7 +5,7 @@ montones += ["*" * int(input("Ingrese cantidad del tercer monton: "))]
 turno = 0
 
 while montones[0] or montones[1] or montones[2]:
-    for i in range(len(montones)):
+    for i, monton in enumerate(montones):
         print(f"{i + 1}: {montones[i]}")
 
     monton = int(input(f"Jugador {turno + 1}, elija un monton: ")) - 1
