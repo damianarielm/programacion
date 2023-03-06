@@ -267,7 +267,7 @@ def quick_sort(lista):
     else:
         pivote = lista[0]
         menores = [ n for n in lista[1:] if n < pivote ]
-        mayores = [ n for n in lista[1:] if n >= pivote ]
+        mayores = [ n for n in lista[1:] if n > pivote ]
         return quick_sort(menores) + [ pivote ] + quick_sort(mayores)
 
 print(f"Lista ordenada: {quick_sort(lista)}.")
