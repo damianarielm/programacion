@@ -1,14 +1,16 @@
-lista = [200, 190, 1200, 1, 2, 4, 55, 1000, 6, 800]
+from permutacion import permutacion # Ejercicio previo
 
+cantidad = int(input("Ingrese la cantidad: "))
+lista = permutacion(cantidad)
 print(f"Lista desordenada: {lista}.")
 
-def ordenar(lista):
+def quick_sort(lista):
     if len(lista) <= 1:
         return lista
     else:
         pivote = lista[0]
         menores = [ n for n in lista[1:] if n < pivote ]
         mayores = [ n for n in lista[1:] if n >= pivote ]
-        return ordenar(menores) + [ pivote ] + ordenar(mayores)
+        return quick_sort(menores) + [ pivote ] + quick_sort(mayores)
 
-print(f"Lista ordenada: {ordenar(lista)}.")
+print(f"Lista ordenada: {quick_sort(lista)}.")
