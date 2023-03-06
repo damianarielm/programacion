@@ -108,6 +108,7 @@
 * Insertar en orden
 * Ordenamiento por insercion
 * Quick Sort
+* Combinar listas ordenadas
 * Merge Sort
 
 # [Punteros](punteros)
