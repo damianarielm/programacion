@@ -4,7 +4,7 @@ cartas = [ "If another player hands you food or drink, you may take their role c
            "If you are the only player to clean up a game, you may take any other player's role card.", # Maid
            "If another player takes a picture of you, you may take their role card.", # Model
            "If another player hands you money, you may take their role card.", # Cheapskate
-           "If another player sits in your seat, you may take their role card." # King
+           "If another player sits in your seat, you may take their role card.", # King
            "If another player comments about the number of times you rolled dice off the table, you may take their role card.", # Klutz
            "If another player threatens to 'flip the table', you make take their role card.", # Clown
            "If another player refuses to play a game that at least two people want to play, you may take their role card.", # Critic
@@ -24,13 +24,9 @@ shuffle(cartas)
 jugadores = int(input("Ingrese cantidad de jugadores: "))
 nombres = []
 for n in range(jugadores):
-    nombre = input(f"Ingrese nombre del jugador {n + 1}: ")
-    nombres += [ nombre ]
-
-for i, nombre in enumerate(nombres):
-    input(f"\n{nombre} presiona enter para revelar tu rol.")
-    input(f"{cartas[i]}\nPresiona enter para continuar.")
-    for _ in range(100): print("")
+    nombres += [ input(f"Ingrese nombre del jugador {n + 1}: ") ]
+    input(f"{cartas[n]}\nPresiona enter para continuar.")
+    print("\n" * 99)
 
 opcion = ""
 while opcion != 0:
@@ -40,4 +36,4 @@ while opcion != 0:
 
     opcion = int(input("Revelar rol: "))
     if opcion > 0:
-        print(cartas[opcion - 1])
+        print(cartas[opcion - 1]) # 43
