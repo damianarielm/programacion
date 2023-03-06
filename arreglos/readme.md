@@ -377,13 +377,12 @@ for jugador in jugadores:
     else:
         print(f"Ubicacion: {lugar}.")
     input("Presione enter para borrar la pantalla.")
-    for _ in range(100): print("")
+    print("\n" * 99)
 
-print(f"Lista de lugares: {lugares}.")
-print("\nComienza el juego!")
+print(f"Lista de lugares: {lugares}.\n")
+print("Comienza el juego!")
 input("Presiona enter para revelar los roles.")
-print(f"\nEspia: {espia}.")
-print(f"Lugar: {lugar}.")
+print(f"Lugar: {lugar}. Espia: {espia}.")
 ```
 
 ## Verificacion de Sudoku
