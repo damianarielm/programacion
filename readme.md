@@ -36,6 +36,7 @@
 
 * Numeros naturales
 * Factores
+* Suma digital
 * Binario a decimal
 * Fizzbuzz
 * Sumatoria de naturales
