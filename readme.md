@@ -45,6 +45,7 @@
 * Maximo de 10 numeros
 * Calculo de pi
 * Calculo de e
+* Tabla de multiplicar
 * Numeros palindromos
 * Fichas de domino
 * Los cofres de Porcia

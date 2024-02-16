@@ -285,6 +285,17 @@ for i in range(1, iteraciones):
 print(f"El valor de e es: {e}.")
 ```
 
+## Tabla de multiplicar
+
+### Python
+
+```python
+for n1 in range(1, 10):
+    for n2 in range(1, 10):
+        print(f"{n1 * n2:2}", end=" ")
+    print("")
+```
+
 ## Numeros palindromos
 
 Un palíndromo, también llamado palíndromo, palíndroma o palindroma, es una
