@@ -162,6 +162,31 @@ while ra%rb != 0:
 print(f"El MCD es: {rb}.")
 ```
 
+## Raiz digital
+
+### Python
+
+``` python
+n = raiz = int(input("Ingrese un numero: "))
+
+while n > 9:
+    raiz = 0
+    while n != 0:
+        raiz += n % 10
+        n //= 10
+    n = raiz
+
+print(f"La raiz digital es: {raiz}.")
+```
+
+```python
+n = int(input("Ingrese un numero: "))
+
+raiz = (n - 1) % 9 + 1 if n else 0
+
+print(f"La raiz digital es: {raiz}.")
+```
+
 ## Calculadora
 
 ### Python

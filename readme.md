@@ -63,6 +63,7 @@
 * Menu
 * Conjetura de Collatz
 * Algoritmo de Euclides
+* Raiz digital
 * Calculadora
 * Adivinar un numero
 * Toros y Vacas
@@ -119,6 +120,7 @@
 * strlen
 * strcpy
 * realloc
+* Aritmetica de punteros
 * Desbordamiento de buffer
 
 # Otros
