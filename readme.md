@@ -56,6 +56,7 @@
 # [Ciclo indefinido](indefinido)
 
 * Contraseña
+* Suma digital
 * Decimal a binario
 * Chequeo de primalidad
 * Recaudacion del dia
