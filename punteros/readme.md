@@ -97,6 +97,8 @@ void main() {
 
 ## Aritmetica de punteros
 
+### C
+
 ```c
 #include <stdio.h>
 
