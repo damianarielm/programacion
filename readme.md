@@ -124,7 +124,14 @@
 * Desbordamiento de buffer
 
 # [Debugging](debugging)
+
+* Longitud
+* Contador
 * Combustible
+* Divisores
+* Division
+* Positivo
+* Ordenar numeros
 
 # Otros
 
